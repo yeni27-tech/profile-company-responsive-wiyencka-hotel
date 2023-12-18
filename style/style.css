@@ -141,12 +141,12 @@ body {
   position: absolute;
 }
 .waves {
-  width: 1263px;
-  height:15vh;
+  width: 1550px;
+  height:30vh;
   margin-bottom:-7px;
   min-height:100px;
   max-height:150px;
-  margin-top: 500px;
+  margin-top: 600px;
   z-index: -1;
 }
 
