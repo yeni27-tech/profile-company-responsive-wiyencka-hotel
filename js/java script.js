@@ -1,3 +1,4 @@
+//slide menu//
 function openNav() {
   document.getElementById("mySidenav").style.width = "100%";
 }
@@ -5,13 +6,15 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
+//selesai//
+
 
 //navbar//
-const nav = document.querySelector("header");
+const nav = document.querySelector(".navbar");
 
-window.addEventListener("scroll", fixnaV);
+window.addEventListener("scroll", fixNaV);
 
-function fixnaV() {
+function fixNaV() {
   if (window.scrollY > nav.offsetHeight + 200) {
     nav.classList.add("active");
   }else {

@@ -1,25 +1,25 @@
 
 
- 
-
-
-* {
+ * {
   padding: 0;
   margin: 0;
 }
 
 body {
   font-family: "Lato", sans-serif;
-  height: 200vh;
 }
 
+/*navbar*/
 header {
+  
+}
+
+.navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-right: 50px;
-  margin-left: 50px;
-  width: 50%;
+  padding-right: 50px;
+  padding-left: 50px;
   position: fixed;
   background: none;
 }
@@ -29,7 +29,8 @@ header {
   font-family: 'Pinyon Script', cursive;
   color: rgba(75, 0, 0, 0.811);
   font-size: 50px; 
-  margin-left: 120px;
+  margin-left: 80vh;
+  margin-top: 10px;
 }
 
 .sidenav {
@@ -60,17 +61,21 @@ header {
 
 .sidenav a:hover{
   color: #f1f1f1;
+  border-bottom-left-radius: 1px solid white;
+  margin-bottom: 10px;
 }
 
 .closebtn {
   position: absolute;
-  top: 30px;
+  top: -40px;
   right: 44px;
-  font-size: 36px;
+  font-size: 100px;
   margin-left: 50px;
 }
+
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+/*selesai*/
