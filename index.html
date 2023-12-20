@@ -17,7 +17,7 @@
       <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="#">home</a>
-        <a href="#">about</a>
+        <a href="#">about us</a>
         <a href="#">service</a>
         <a href="#">team</a>
         <a href="#">Contact</a>
@@ -96,3 +96,40 @@
      <!--selesai-->
 
 
+     <div class="register">
+       <form id="orderForm">
+    <label for="customerName">Customer Name:</label>
+    <input type="text" id="customerName" required><br>
+    <br>
+    <br>
+    
+    <label for="customerAddress">Customer Address:</label>
+    <textarea id="customerAddress" required></textarea><br>
+    <br>
+    <br>
+    
+    <label for="itemName">Item Name:</label>
+    <select id="itemName" onchange="updateItemPrice()" required>
+      <option value="Cake" data-price="120000">Cake</option>
+      <option value="brownis" data-price="50000">brownis</option>
+      <option value="pancake" data-price="20000">pancake</option>
+      <option value="strawberry cake" data-price="2000000">strawberry cake</option>
+      
+      
+    </select>
+    
+    
+    <br>
+    <br>
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" required>
+    <br>
+    <br>
+    
+    <button type="button" onclick="calculateAndRedirect()">Calculate</button>
+    <button type="reset">reset</button>
+  </form>
+<hr>
+  <script src="./js/java script.js">
+  </script>
+     </div>

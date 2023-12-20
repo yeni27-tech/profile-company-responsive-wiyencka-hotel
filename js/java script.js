@@ -114,3 +114,57 @@ function slideIndicator(toIndex) {
    newDotActive.classList.add("carousel_dot__active");
 }
 //selesai//
+
+//register//
+//-->input//
+ function updateItemPrice() {
+      const selectedItem = document.getElementById("itemName");
+      const selectedOption = selectedItem.options[selectedItem.selectedIndex];
+      const price = parseFloat(selectedOption.getAttribute("data-price"));
+
+      
+      selectedItem.setAttribute("data-calculated-price", price.toFixed(2));
+    }
+
+    function calculateAndRedirect() {
+      const customerName = document.getElementById("customerName").value;
+      const customerAddress = document.getElementById("customerAddress").value;
+      const itemName = document.getElementById("itemName").value;
+      const quantity = parseInt(document.getElementById("quantity").value);
+
+     
+      const calculatedPrice = parseFloat(document.getElementById("itemName").getAttribute("data-calculated-price"));
+
+      
+      const subtotal = calculatedPrice * quantity;
+
+     
+      sessionStorage.setItem("orderDetails", JSON.stringify({
+        customerName: customerName,
+        customerAddress: customerAddress,
+        itemName: itemName,
+        itemPrice: calculatedPrice, 
+        quantity: quantity,
+        subtotal: subtotal,
+     
+      }));
+
+      
+      window.location.href = "./html/output-register.html";
+    }
+    //output-->//
+      
+    const storedOrderDetails = sessionStorage.getItem("orderDetails");
+    const orderDetails = JSON.parse(storedOrderDetails);
+
+    
+    document.getElementById("output").innerHTML = `
+      <p><strong>Customer Name:</strong>  ${orderDetails.customerName}</p>
+      <p><strong>Customer Address:</strong>  ${orderDetails.customerAddress}</p>
+      <p><strong>Item Name:</strong>  ${orderDetails.itemName}</p>
+      <p><strong>Item Price:</strong> Rp ${orderDetails.itemPrice.toFixed(2)}</p>
+      <p><strong>Quantity:</strong>  ${orderDetails.quantity}</p>
+      <hr class="dashed-inline"><br>
+      <p><strong>Subtotal:</strong>Rp  ${orderDetails.subtotal.toFixed(2)}</p>
+    `;
+    //selesai//
