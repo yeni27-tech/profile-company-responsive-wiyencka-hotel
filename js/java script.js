@@ -3,7 +3,7 @@ const loadText = document.querySelector("loading");
 const background = document.querySelector("body");
 
 let load = 0;
-let int = setInterval(blurring, 40);
+let int = setInterval(blurring, 30);
 
 function blurring() {
   load++;
