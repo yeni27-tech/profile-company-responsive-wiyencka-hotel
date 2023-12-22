@@ -15,7 +15,7 @@ body {
 .loading-text {
   color: rgba(255, 255, 255, 0.811);
   font-size: 1px; 
-  display:contents
+  display:none;
 }
 
 /*navbar*/
