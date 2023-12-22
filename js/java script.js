@@ -115,6 +115,7 @@ function slideIndicator(toIndex) {
 }
 //selesai//
 
+
 //register//
 //-->input//
  function updateItemPrice() {
