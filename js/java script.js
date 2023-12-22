@@ -1,5 +1,4 @@
 //loading//
-////
 const loadText = document.querySelector("loading");
 const background = document.querySelector("body");
 
