@@ -1,3 +1,29 @@
+//loading//
+const loadText = document.querySelector("loading");
+const background = document.querySelector("body");
+
+let load = 0;
+let int = setInterval(blurring, 40);
+
+function blurring() {
+  load++;
+
+  if (load > 99) {
+    clearInterval(int);
+  }
+
+  loadText.innerText = `${load}%`;
+  loadText.style.opacity = scale(load, 0, 100,);
+  background.style.filter = `blur(${scale(load, 0, 100,40,0)}px)`;
+}
+
+const scale = (num, in_min, in_max, out_min, out_max) => {
+  return ((num - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min;
+};
+//selesai//
+
+
+
 //slide menu//
 function openNav() {
   document.getElementById("mySidenav").style.width = "100%";
@@ -9,19 +35,6 @@ function closeNav() {
 //selesai//
 
 
-//navbar//
-const nav = document.querySelector(".navbar");
-
-window.addEventListener("scroll", fixNaV);
-
-function fixNaV() {
-  if (window.scrollY > nav.offsetHeight + 200) {
-    nav.classList.add("active");
-  }else {
-    nav.classList.remove("active");
-  }
-}
-//selesai//
 
 //slider//
 let onSlide = false;
@@ -114,6 +127,7 @@ function slideIndicator(toIndex) {
    newDotActive.classList.add("carousel_dot__active");
 }
 //selesai//
+
 
 
 //register//
