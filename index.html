@@ -83,6 +83,27 @@
          <button class="carousel_dot"></button>
       </div>
 
+
+      <!--gelombang-->
+      <div class="gelombang">
+         <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+
+<defs>
+<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+</defs>
+
+<g class="parallax">
+<use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+<use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+<use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+</g>
+</svg>
+      </div>
+      <!--selesai-->
+
+      <!--control slider-->
       <div class="carousel_control">
          <button class="carousel_button carousel_button__prev">
             <i class="fas fa-chevron-left"></i>
@@ -95,41 +116,10 @@
    </div>
      <!--selesai-->
 
+     <!--reservation-->
+     <reservation class="w-reservation">
+      <reservation class="wrapper">
+          
+      </reservation>
+     </reservation>
 
-     <div class="register">
-       <form id="orderForm">
-    <label for="customerName">Customer Name:</label>
-    <input type="text" id="customerName" required><br>
-    <br>
-    <br>
-    
-    <label for="customerAddress">Customer Address:</label>
-    <textarea id="customerAddress" required></textarea><br>
-    <br>
-    <br>
-    
-    <label for="itemName">Item Name:</label>
-    <select id="itemName" onchange="updateItemPrice()" required>
-      <option value="Cake" data-price="120000">Cake</option>
-      <option value="brownis" data-price="50000">brownis</option>
-      <option value="pancake" data-price="20000">pancake</option>
-      <option value="strawberry cake" data-price="2000000">strawberry cake</option>
-      
-      
-    </select>
-    
-    
-    <br>
-    <br>
-    <label for="quantity">Quantity:</label>
-    <input type="number" id="quantity" required>
-    <br>
-    <br>
-    
-    <button type="button" onclick="calculateAndRedirect()">Calculate</button>
-    <button type="reset">reset</button>
-  </form>
-<hr>
-  <script src="./js/java script.js">
-  </script>
-     </div>
