@@ -1,0 +1,75 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+
+
+body{
+  position: relative;
+  overflow-x: hidden;
+  line-height: 1.5;
+  background:radial-gradient(rgba(237, 0, 0, 0.61),rgba(218, 1, 1, 0.902),rgb(139, 0, 0));
+  font-size: 14px;
+  text-align: center;
+  display: table;
+  height: 100vh;
+}
+.logo-wrap{
+    position: absolute;
+    top: 45%;
+    left: 57%;
+    transform: translate(-50%,-50%);
+    width: 70%;
+    height: max-content;
+}
+
+h6 {
+  font-size: 30px;
+  font-family: monospace;
+  justify-content: space-between;
+  text-align: center;
+  color: rgb(191, 191, 32);
+  letter-spacing: 15px;
+  margin-right: 200px;
+}
+
+ hr {
+    margin-right: 200px;
+ }
+.st0{
+  font-family: 'Kaushan Script', cursive;
+  font-family: 'Pinyon Script', cursive;
+  stroke: #fff;
+  stroke-dasharray: 920;
+  opacity: 1;
+  animation: 10s logo-animation cubic-bezier(1, 0.50, 0.175, 1);
+  animation-fill-mode: forwards;
+}
+
+.st2 {
+  font-size: 150px;
+}
+@keyframes logo-animation {
+  0%{
+    opacity: 0;
+    fill: none;
+    stroke-dasharray: 920;
+  }
+  30%{
+    opacity: 1;
+  }
+  50%{
+    fill: rgba(255,255,255,.0);
+  }
+  100%{
+    opacity: 1;
+    stroke-dasharray: 200;
+    stroke: transparent;
+    fill: rgba(255,255,255,1);
+  }
+}

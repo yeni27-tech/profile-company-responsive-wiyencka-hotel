@@ -9,6 +9,7 @@ body {
   font-family: "Lato", sans-serif;
   scroll-behavior: smooth;
   height: 300vh;
+  background: #ffffff;
 }
 
 /*loading teks*/
@@ -39,7 +40,7 @@ header {
   font-family: 'Pinyon Script', cursive;
   color: rgba(75, 0, 0, 0.811);
   font-size: 47px; 
-  margin-left: 80vh;
+  margin-left: 75vh;
   margin-top: 10px;
 }
 .logo > h6 {
@@ -47,10 +48,10 @@ header {
   font-family: monospace;
   justify-content: space-between;
   text-align: center;
-   margin-left: 80vh;
+   margin-left: 75vh;
 }
 .logo >hr {
-   margin-left: 80vh;
+   margin-left: 75vh;
 }
 
 .sidenav {

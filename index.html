@@ -3,15 +3,12 @@
  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>wiyencka Hotel</title>
+  <title>Wiyencka Hotel</title>
   <link rel="stylesheet" href="./style/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Pinyon+Script&family=Tangerine&display=swap" rel="stylesheet">
 </head>
-   <!--masih salah-->
-   <loading class="ala"></loading>
-  <!--navbar-->
     <header>
        <div class="navbar">
       <nav id="mySidenav" class="sidenav">
@@ -42,7 +39,7 @@
 
       <!--vidio-->
        <div class="fullscreen">
-         <video loop muted autoplay poster="./images/image1.png" class="full">
+         <video loop muted autoplay class="full">
             <source src="https://assets.mixkit.co/videos/preview/mixkit-interior-of-a-room-with-terrace-4029-large.mp4" type="video/mp4">
          </video>
        </div>
@@ -115,7 +112,30 @@ viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
      <!--reservation-->
      <reservation class="container-reservation">
       <reservation class="wrap-all-child-rest">
-         .
+         <div class="check-in">
+            <label for="c-i">check in</label>
+            <input type="date" id="c-i" onclick="">
+         </div>
+         <div class="check-out">
+            <label for="c-o">check out</label>
+            <input type="date" id="c-o">
+         </div>
+         <div class="n-of-guest">
+            <label for="opt">number of guest</label>
+            <select id="opt">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            </select>
+         </div>
       </reservation>
+      <div class="btn-rest">reservation</div>
      </reservation>
+   
 
+
+     
+   </body>
+     </html>
