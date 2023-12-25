@@ -33,25 +33,30 @@ header {
   padding-left: 50px;
   position: fixed;
   background: none;
+  width:1300px;
 }
+
 
 .logo>h1 {
   font-family: 'Kaushan Script', cursive;
   font-family: 'Pinyon Script', cursive;
   color: rgba(75, 0, 0, 0.811);
   font-size: 47px; 
-  margin-left: 75vh;
   margin-top: 10px;
+  margin-right: 100vh;
 }
 .logo > h6 {
   font-size: 15px;
   font-family: monospace;
   justify-content: space-between;
   text-align: center;
-   margin-left: 75vh;
+  margin-right: 100vh;
+  color:  rgb(92, 92, 0);;
 }
 .logo >hr {
-   margin-left: 75vh;
+  margin-right: 100vh;
+  background-color: black;
+  border: 1px solid black;
 }
 
 .sidenav {
@@ -188,8 +193,7 @@ header {
    bottom: 0;
    overflow: hidden;
    z-index: -100;
-   -webkit-mask-image: linear-gradient( transparent,black, black,white);
-   mask-image:linear-gradient( rgba(75, 0, 0, 0.811),);
+   -webkit-mask-image: linear-gradient( transparent,black,black, black,black);
    filter: blur(2px) ;
 }
 
@@ -288,7 +292,6 @@ header {
 
 /*gelombang*/
 .waves {
-  position:absolute;
   width: 100%;
   height:15vh;
   margin-bottom:-7px; /*Fix for safari gap*/
@@ -352,4 +355,63 @@ header {
   h1 {
     font-size:24px;
   }
+}
+
+/*reservation*/
+.container-reservation {
+   display: flex;
+   background-color: #fff ;
+   text-transform: capitalize;
+}
+
+.wrap-all-child-rest {
+   display: flex;
+   margin-left:20vh;
+   margin-left: 20vh;
+   box-shadow: 1px 4px 6px gray;
+   align-items: center;
+}
+
+.wrap-all-child-rest>.check-in, .check-out, .n-of-guest{
+   padding: 5vh;
+}
+
+.wrap-all-child-rest> .check-out, .n-of-guest, .btn-rest {
+   margin-left: 15vh;
+}
+
+.btn-rest {
+   background: rgb(217, 142, 2);
+   border: 1.5px solid rgb(125, 81, 1);
+   padding: 1.5rem;
+   margin-right: 5vh;
+   margin-left: 17.5vh;
+   text-decoration: none;
+}
+
+.btn-rest a {
+   color: #fff;
+   text-decoration: none;
+}
+
+.wrap-all-child-rest #c-i, #c-o, #opt {
+   border: none;
+   border-bottom: 1px solid black;
+   opacity: 0.8;
+}
+
+.wrap-all-child-rest #opt {
+   padding-left: 100px;
+}
+
+.btn-rest:hover {
+    background: rgb(183, 1, 1);
+    transition: 0.4s ease;
+    border: none;
+}
+
+.btn-rest>a:hover{
+   background: orange;
+   
+   transition-delay: 0.3s;
 }
