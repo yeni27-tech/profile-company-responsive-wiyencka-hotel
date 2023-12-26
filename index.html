@@ -55,7 +55,14 @@
          <div class="carousel_item carousel_item__active">
             <img src="" alt="">
             <div class="carousel_caption">
-               <h1 class="carousel_title">Change It As You See Fit</h1>
+               <h1 class="carousel_title">Welcome Home Away From Home</h1>
+               <p class="carousel_description">pintu gerbang anda menuju relaksasi</p>
+            </div>
+         </div>
+         <div class="carousel_item">
+            <img src="" alt="">
+             <div class="carousel_caption">
+               <h1 class="carousel_title">Where dreams meet reality.</h1>
                <p class="carousel_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id cupiditate
                   corporis laudantium quae velit quam.</p>
             </div>
@@ -63,15 +70,7 @@
          <div class="carousel_item">
             <img src="" alt="">
              <div class="carousel_caption">
-               <h1 class="carousel_title">Change It As You See Fit</h1>
-               <p class="carousel_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id cupiditate
-                  corporis laudantium quae velit quam.</p>
-            </div>
-         </div>
-         <div class="carousel_item">
-            <img src="" alt="">
-             <div class="carousel_caption">
-               <h1 class="carousel_title">Change It As You See Fit</h1>
+               <h1 class="carousel_title">Where every stay is a story</h1>
                <p class="carousel_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id cupiditate
                   corporis laudantium quae velit quam.</p>
             </div>
@@ -141,14 +140,14 @@ viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
    <div class="container">
       <div class="row">
         <div class="col-1">
-          <h1>Explore Best Properties</h1>
+          <h1>Explore Best Fasilities</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
             saepe voluptatem iusto cupiditate iure qui quas natus facere
             voluptates. Recusandae dicta quae doloribus repellat. A
             reprehenderit mollitia incidunt vitae nihil.
           </p>
-          <button>More Properties</button>
+          <button>More Fasilities</button>
 
           <ul>
             <li class="btn active"></li>
@@ -158,11 +157,37 @@ viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
         </div>
 
         <div class="col-2">
-          <img src="./images/0.jpg" id="banner" />
+          <img src="./images/0.jpg" id="banner"/>
         </div>
       </div>
     </div>
+<script>
+    //fasilities//
+    let btns = document.querySelectorAll(".btn");
+    let banner = document.getElementById("banner");
 
+btns.forEach((btn, index) => {
+btn.addEventListener("click", () => {
+    banner.src = `./images/${index}.jpg`;
+    animation();
+    btn.classList.add("active");
+  });
+});
+
+function animation() {
+  banner.classList.add("zoom");
+
+  setTimeout(() => {
+    banner.classList.remove("zoom");
+  }, 1000);
+
+  for (b of btns) {
+    b.classList.remove("active");
+  }
+}
+//selesai//
+
+</script>
 
 
      
