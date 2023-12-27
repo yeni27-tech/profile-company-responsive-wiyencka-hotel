@@ -31,7 +31,6 @@ header {
   justify-content: space-between;
   padding-right: 50px;
   padding-left: 50px;
-  position: fixed;
   background: none;
   width:1300px;
 }
@@ -535,18 +534,18 @@ input[type=checkbox] {
 
 /* Slide the first panel in */
 input[type=checkbox]:checked ~ div.curtain__panel--left {
-  transform: translateY(0);
+  transform: translateX(0);
 }
         
 /* Slide the second panel in */
 input[type=checkbox]:checked ~ div.curtain__panel--right {
-  transform: translateY(0);
+  transform: translateX(0);
 }
-
+      
 .curtain__panel {
-  background: rgb(255, 255, 255);
-  width: 100%; /* Each panel takes up half the container */
-  height: 50vh; /* Used for demo purposes */
+  background: rgb(35, 35, 35);
+  width: 50%; /* Each panel takes up half the container */
+  height: 70vh; /* Used for demo purposes */
   float: left; /* Makes sure panels are side-by-side */
   position: relative; /* Needed to define the z-index */
   z-index: 2; /* Places the panels in front of the prize */
@@ -554,7 +553,7 @@ input[type=checkbox]:checked ~ div.curtain__panel--right {
 }
 
 .curtain__panel--left {
-  transform: translateY(-100%);
+  transform: translateY(100%);
 }
 
 .curtain__panel--right {
@@ -562,12 +561,14 @@ input[type=checkbox]:checked ~ div.curtain__panel--right {
 }
 
 .curtain__prize {
-  background: rgb(226, 226, 226);
+  background: linear-gradient(rgb(255, 255, 255), rgb(190, 190, 190));
   position: absolute; /* Forces the prize position into the container start */
   z-index: 1; /* Places the prize behind the panels, which are z-index 2 */
   width: 100%;
-  height: 100%;
-  text-align: center;
-  
+  height: 70vh;
 }
 
+.curtain__prize > .kata {
+  padding-top: 10%;
+  text-align: center;
+}
