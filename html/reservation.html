@@ -1,0 +1,155 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sticky Navbar</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Pinyon+Script&family=Tangerine&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/logo.png">
+    <link rel="stylesheet" href="../style/reservation.css">
+  </head>
+  <body>
+    <nav class="nav">
+        <logo class="logo">
+            <a href="../index.html">
+            <h1>WiyenckA\</h1>
+            <h3>H O T E L</h3>
+            </a>
+        </logo>
+      <div class="container">
+        <ul>
+          <li><a href="./reservation.html" class="border-btm">Home</a></li>
+          <li><a href="">kebijakan</a></li>
+        </ul>
+      </div>
+    </nav>
+ 
+ <!---->
+        <div class="reservation">
+            <div class="wrap-date">
+                <div class="date">
+                    <div class="date-pertama">
+                    <label for="date-pertama">tanggal menginap</label>
+                    <input type="date" name="date-pertama" id="data-awal" min="01-21-2024">
+                    </div>
+                    <i class="fa-solid fa-right-long"></i>
+                    <div class="date-kedua">
+                    <input type="date" name="date-kedua" id="date-akhir">
+                    </div>
+                     <div class="promo">
+                        <i class="fa-solid fa-tag"></i>
+                           <span><a href="#">dapatkan code promo akhir tahun</a></span>
+                </div>
+                </div>
+            </div>
+        </div>
+     <!---->
+
+     <!---->
+     <div id="rom1">
+        <div class="bg-room0">
+            <div class="container0">
+                <img src="../img-room/standard-double-room2.png" alt="">
+                <div class="about">
+                    <h3>standard double room</h3>
+                    <br>
+                    <div class="flex-icon">
+                        <div class="orang"><i class="fa-solid fa-person"></i>2 orang</div> &emsp;
+                        <div class="bed"><i class="fa-solid fa-bed"></i>1 king bed</div> &emsp;
+                        <div class="bath"><i class="fa-solid fa-bath"></i>1 kamar mandi</div> &emsp;
+                    </div>
+                    <div class="behavior">
+                        <p>
+                            26cm2 •bebas rokok •AC •kotak safe di kamar •bathrobes<br> 
+                            disediakan •televisi •wireles nternet •shower-terpisah...<br>
+                        </p><br>
+                            A simple and comfortable space for you to relax... <br>
+                            <a href="#"><i>info selengkapnya</i></a><br>
+                            <section class="container-btn">
+                            <button class="btn">pesan</button>
+                            </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+
+      <!---->
+     <div id="rom1">
+        <div class="bg-room1">
+            <div class="container1">
+                <img src="../img-room/superior-twin-room2.png" alt="">
+                <div class="about">
+                    <h3>superior twin room</h3>
+                    <br>
+                    <div class="flex-icon">
+                        <div class="orang"><i class="fa-solid fa-person"></i>2 orang</div> &emsp;
+                        <div class="bed"><i class="fa-solid fa-bed"></i>2 single bed</div> &emsp;
+                        <div class="bath"><i class="fa-solid fa-bath"></i>1 kamar mandi</div> &emsp;
+                    </div>
+                    <div class="behavior">
+                        <p>
+                            30cm2 •bebas rokok •shower diatas bak mandi •kotak safe di<br> 
+                            kamar •bathrobes disediakan •teevisi •wireles nternet •ba...<br>
+                        </p><br>
+                            A caffe and quiet environment for you refresh yourself... <br>
+                            <a href="#"><i>info selengkapnya</i></a><br>
+                            <section class="container-btn">
+                            <button class="btn">pesan</button>
+                            </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <!---->
+     <div id="rom1">
+        <div class="bg-room2">
+            <div class="container1">
+                <img src="../img-room/./delux-tripel-room1.png" alt="">
+                <div class="about">
+                    <h3>deluxe triple room</h3>
+                    <br>
+                    <div class="flex-icon">
+                        <div class="orang"><i class="fa-solid fa-person"></i>3 orang</div> &emsp;
+                        <div class="bed"><i class="fa-solid fa-bed"></i>1 queen/twin bed</div> &emsp;
+                        <div class="bath"><i class="fa-solid fa-bath"></i>1 kamar mandi</div> &emsp;
+                    </div>
+                    <div class="behavior">
+                        <p>
+                            33cm2 •bebas rokok •AC •shower-terpisah •pengering rambut<br> 
+                            •kabel/satelit TV •akses internet •telepon •kotak save di...<br>
+                        </p><br>
+                            A caffe and quiet environment for you refresh yourself... <br>
+                            <a href="#"><i>info selengkapnya</i></a><br>
+                           <section class="container-btn">
+                            <button class="btn">pesan</button>
+                            </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+
+<!--script navbar-->
+    <script>
+        const nav = document.querySelector(".nav");
+
+window.addEventListener("scroll", fixNav);
+
+function fixNav() {
+  if (window.scrollY > nav.offsetHeight + 150) {
+    nav.classList.add("active");
+  } else {
+    nav.classList.remove("active");
+  }
+}
+    </script>
+  </body>
+</html>

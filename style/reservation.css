@@ -1,0 +1,275 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  color: #000000;
+  padding-bottom: 50px;
+  background-color: rgba(223, 223, 223, 0.795);
+}
+
+.container {
+  max-width: 1200px;
+  margin:  auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    color: white;
+}
+.logo h3 {
+    font-size: 15px;
+}
+ .logo h1 {
+    font-size: 35px;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Pinyon Script', cursive;
+}
+.nav {
+  position: fixed;
+  background-color: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  text-align: center;
+  z-index: 100;
+  justify-content: space-between;
+}
+
+.nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  transition: all 0.3s ease-in-out;
+}
+.container .border-btm {
+    border-bottom: 2px solid white;
+}
+.nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+   margin-left: 100vh;
+    margin-right: 100px;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 7px 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav a:hover {
+  color: #222;
+  transition: all 0.4s ease;
+}
+
+.nav.active a:hover {
+  color: #222;
+  transition: all 0.4s ease;
+}
+
+.nav.active .border-btm:hover {
+  color: 
+  white;
+}
+
+.nav .border-btm:hover {
+  color: white;
+  transition: none;
+}
+
+/* ------- JavaScript -------*/
+.nav.active {
+  background: chocolate;
+}
+.nav.h1.active{
+    color: whitesmoke;
+} 
+.nav.active a {
+  color: white;
+}
+/* -------------- */
+    
+    .fa-solid{
+        color: rgb(31, 13, 0);
+    }
+   
+    .wrap-date {
+        background: white;
+        padding: 3vh;
+        margin-top: 35vh;
+        width: 150vh;
+        border-radius: 1vh;
+        border: 2px solid goldenrod;
+         box-shadow: 0 10px 10px rgba(0, 0, 0, 0.667);
+    }
+    .date {
+        display:flex ;
+        align-items: center;
+    }
+    .date label {
+        color: #000000;
+        margin-left: 100px;
+    }
+    .date input {
+        opacity: 0.8;
+        border: none;
+        margin:10px;
+        border-bottom: 1px solid black !important;
+        justify-content: center;
+        width: 120px;
+    }
+    .date input:focus {
+        outline: none;
+        border: 2px solid chocolate;
+    }
+    .promo {
+        margin-left: 20px;
+        align-items: center;
+    }
+    .promo>span a {
+    text-decoration: none;
+    color: black;
+     opacity: 0.7;
+    }
+    .promo>span a:hover {
+        color: rgb(66, 27, 0);
+        opacity: none;
+    }
+
+
+    .reservation {
+    background: url(../img-room/kitcen.png);
+    background-size: cover;
+    background-position: bottom center;
+  height: 60vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+  z-index: -2;
+    }
+     #rom1 {
+        display: block;
+        margin-right: auto;
+    }
+    .bg-room0{
+        background-color: #ffffff;
+        margin-left: 100px;
+        margin-right: 100px;
+        padding: 20px;
+         box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+         border-radius: 10px;
+    }
+    .bg-room1{
+        background-color: #ffffff;
+        margin-left: 100px;
+        margin-right: 100px;
+        padding: 20px;
+        margin-top: 20px;
+         box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+         border-radius: 10px;
+    }
+    .bg-room2{
+        background-color: #ffffff;
+        margin-left: 100px;
+        margin-right: 100px;
+        padding: 20px;
+        margin-top: 20px;
+         box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+         border-radius: 10px;
+    }
+    .container1 img {
+        width: 300px;
+        height: auto;
+        display: block;
+        margin-left: auto;
+    }
+    .container0 {
+        display: flex;
+    }
+    .container0 img {
+        width: 300px;
+        height: auto;
+        display: block;
+        margin-left:24vh;
+    }
+    .container1 {
+        display: flex;
+    }
+    .flex-icon{
+        display: flex;
+    }
+    .about {
+        display: block;
+        margin-right: auto;
+        margin-left: 15px;
+    }
+    .behavior {
+        font-size: 15px;
+    }
+ .container-btn {
+    margin-top: 3vh;
+    margin-left: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.btn {
+  border: none;
+  padding: 7px 12px;
+  background: chocolate;
+  color: #fff;
+  font-size: 14px;
+  text-transform: capitalize;
+  position: relative;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.btn:before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: -5px;
+  left: -5px;
+  border-radius: 2px;
+  border-top: 2px solid chocolate;
+  border-left: 2px solid chocolate;
+  transition: all 0.25s;
+}
+
+.btn:hover:before,
+.btn:hover:after {
+  height: 100%;
+  width: 100%;
+}
+
+.btn:after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  bottom: -5px;
+  right: -5px;
+  border-radius: 2px;
+  border-bottom: 2px solid chocolate;
+  border-right: 2px solid chocolate;
+  transition: all 0.25s;
+}
