@@ -5,23 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Hotel Payment Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Pinyon+Script&family=Tangerine&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../images/logo.png">
+    <link rel="stylesheet" href="../style/payment.css">
 </head>
 <body>
+
+    <!--navbar-->
+     <nav class="nav">
+        <logo class="logo">
+            <a href="../html/reservation.html">
+            <h1>WiyenckA\</h1>
+            <h3>H O T E L</h3>
+            </a>
+        </logo>
+      <div class="container">
+        <ul>
+          <li><a href="./reservation.html">Back</a></li>
+          <li><a href="./kebijakan-wiyencka.html">Kebijakan</a></li>
+          <li><a href="#"class="border-btm">Pembayaran</a></li>
+        </ul>
+      </div>
+    </nav>
+
     <div class="container">
-        <h1>Hotel Payment Form</h1>
         <form id="paymentForm">
             <label for="cardNumber">Card Number:</label>
             <input type="text" id="cardNumber" name="cardNumber" placeholder="XXXX-XXXX-XXXX-XXXX" required>
-
+             <br>
+             <br>
             <label for="expiryDate">Expiry Date:</label>
             <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
-
+             <br>
+             <br>
             <label for="cvv">CVV:</label>
             <input type="text" id="cvv" name="cvv" placeholder="XXX" required>
+             <br>
+             <br>
 
             <button type="button" onclick="submitPaymentForm()">Pay Now</button>
         </form>
     </div>
+    </body>
 
     <script>
     function submitPaymentForm() {

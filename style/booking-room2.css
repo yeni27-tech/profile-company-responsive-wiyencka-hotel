@@ -170,6 +170,7 @@ body {
 
 .all-about {
   background-color: rgba(169, 123, 6, 0.297);
+  margin-top: 30vh;
 }
 .about {
     display: block;

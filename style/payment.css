@@ -1,71 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Booking Confirmation</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Pinyon+Script&family=Tangerine&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="../images/logo.png">
-</head>
-<body>
-     <!--navbar-->
-     <nav class="nav">
-        <logo class="logo">
-            <a href="../html/reservation.html">
-            <h1>WiyenckA\</h1>
-            <h3>H O T E L</h3>
-            </a>
-        </logo>
-      <div class="container">
-        <ul>
-          <li><a href="./reservation.html">Back</a></li>
-          <li><a href="./kebijakan-wiyencka.html">Kebijakan</a></li>
-          <li><a href="#"class="border-btm">konfirmasi</a></li>
-        </ul>
-      </div>
-    </nav>
-
-    
-    <div class="container-com">
-        <div id="confirmationDetails"></div>
-    </div>
-
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-
-    const name = sessionStorage.getItem('name');
-    const email = sessionStorage.getItem('email');
-    const checkIn = sessionStorage.getItem('checkIn');
-    const checkOut = sessionStorage.getItem('checkOut');
-
-    
-    const cardNumber = sessionStorage.getItem('cardNumber');
-    const expiryDate = sessionStorage.getItem('expiryDate');
-    const cvv = sessionStorage.getItem('cvv');
-
-   
-    const confirmationDetails = document.getElementById('confirmationDetails');
-    confirmationDetails.innerHTML = `
-        <p><b>Thank you for your booking!</b></p>
-        <p><br><p/>
-        <p>Name: ${name}</p>
-        <p>Email: ${email}</p>
-        <p>Check-In: ${checkIn}</p>
-        <p>Check-Out: ${checkOut}</p>
-        <p>Card Number: ${cardNumber}</p>
-        <p>Expiry Date: ${expiryDate}</p>
-        <p>CVV: ${cvv}</p>
-    `;
-});
-
-    </script>
-
-    <style>
-    * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -167,7 +100,7 @@ body {
   margin-bottom: 20px;
   z-index: -2;
     }
-    .container-com{
+    #paymentForm {
         background: rgba(255, 255, 255, 0.836);
         backdrop-filter: 10px;
         margin-top: 20vh;
@@ -177,10 +110,59 @@ body {
         border-radius: 5vh;
         box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
         padding: 7vh;
-        font-size: large;
        }
+       form {
+        margin: 20px;
+       }
+       form {
+        text-align: center;
+       }
+       form input:hover {
+        background: rgba(0, 0, 0, 0.057);
+       }
+     form input[type="text"]{
+       font-family: monospace;
+        border: none;
+          outline: none;
+         border: 2px solid rgba(210, 105, 30, 0.381);
+  border-bottom: 2px solid chocolate;
+  padding: 1.5vh;
+  width: 350px;
+  border-radius: 5px;
+ }
    
-    </style>
-</body>
-</html>
 
+.c-btn {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  background: #000;
+}
+
+button {
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 0.5rem 2rem;
+  background: chocolate;
+  color: #fff;
+  border-radius: 100px;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+button:hover:before {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
