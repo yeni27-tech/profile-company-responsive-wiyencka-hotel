@@ -222,17 +222,21 @@ body {
         margin-right: auto;
         margin-left: 15px;
     }
+    .about h3 {
+      font-size: 21px;
+    }
     .behavior {
         font-size: 15px;
         text-transform: none;
+        opacity: 0.9;
     }
  .container-btn {
     margin-top: 3vh;
-    margin-left: 45vh;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: sans-serif;
+  justify-content: space-between;
 }
 
 .btn {
@@ -278,7 +282,15 @@ body {
   border-right: 2px solid chocolate;
   transition: all 0.25s;
 }
-
+.ratings {
+  display: flex;
+}
+  .ratings i {
+  color: goldenrod;
+}
+ .ratings h4 {
+  opacity: 0.8;
+}
 @media screen and (max-width: 576px) {
   * {
   box-sizing: border-box;

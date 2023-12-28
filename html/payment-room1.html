@@ -1,0 +1,50 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hotel Payment Form</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Hotel Payment Form</h1>
+        <form id="paymentForm">
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber" name="cardNumber" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+
+            <label for="expiryDate">Expiry Date:</label>
+            <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+             
+            <label for="">total pembayaran:</label>
+            <input type="" value="Rp. 2.000.000,00.-">
+
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" placeholder="XXX" required>
+
+            <button type="button" onclick="submitPaymentForm()">Pay Now</button>
+        </form>
+    </div>
+
+    <script>
+    function submitPaymentForm() {
+    const cardNumber = document.getElementById('cardNumber').value;
+    const expiryDate = document.getElementById('expiryDate').value;
+    const cvv = document.getElementById('cvv').value;
+
+    
+    if (cardNumber && expiryDate && cvv) {
+        sessionStorage.setItem('cardNumber', cardNumber);
+        sessionStorage.setItem('expiryDate', expiryDate);
+        sessionStorage.setItem('cvv', cvv);
+
+        window.location.href = './comfirmation-room1.html';
+    } else {
+        alert('Please fill in all required fields.');
+    }
+}
+    </script>
+</body>
+</html>
+

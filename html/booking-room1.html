@@ -8,9 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Pinyon+Script&family=Tangerine&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="./images/logo.png">
+    <link rel="shortcut icon" href="../images/logo.png">
+    <link rel="stylesheet" href="../style/booking-room1.css">
 </head>
 <body>
+  <!--navbar-->
     <nav class="nav">
         <logo class="logo">
             <a href="../html/reservation.html">
@@ -31,6 +33,8 @@
             <h3> A simple and comfortable space for you to relax</h3>
          </div>
 
+
+
     <!--image-->
     <div class="imageWrapper" id="wrapper">
       <img src="../img-room/standard-double-room1.png" id="fullImg" />
@@ -42,6 +46,8 @@
       <img src="../img-room/standard-double-room2.png" />
       <img src="../img-room/standard-double-room3.png"/>
     </div>
+
+
     <div class="all-about">
         <center>
             <h1>fasilitas kamar</h1>
@@ -49,34 +55,105 @@
 <div class="about">
     <table padding="10px">
         <tr>
-            <td>•luas kamar:26cm2</td>
+            <td>•Luas kamar:26cm2</td>
             <td>•AC</td>
-            <td>•peralatan obat</td>
-            <td>•bathrobes</td>
-            <td>•televisi</td>
+            <td>•Peralatan obat</td>
+            <td>•Bathrobes</td>
+            <td>•Televisi</td>
         </tr>
         <tr>
-            <td>•wireles internet</td>
-            <td>•shower terpisah</td>
-            <td>•kabel/ satelit TV</td>
-            <td>•telepon</td>
-            <td>•heater</td>
+            <td>•Wireles internet</td>
+            <td>•Shower terpisah</td>
+            <td>•Kabel/ satelit TV</td>
+            <td>•Telepon</td>
+            <td>•Heater</td>
         </tr>
         <tr>
-            <td>•kulkas mini</td>
-            <td>•akses lift</td>
-            <td>•setrika papan</td>
-            <td>•pengering rambut</td>
-            <td>•meja tulis</td>
+            <td>•Kulkas mini</td>
+            <td>•Akses lift</td>
+            <td>•Setrika papan</td>
+            <td>•Pengering rambut</td>
+            <td>•Meja tulis</td>
         </tr>
     </table>
+
+
      <div class="kapasitas">
                         <div class="orang"><i class="fa-solid fa-person"></i>2 orang</div> &emsp;
                         <div class="bed"><i class="fa-solid fa-bed"></i>1 king bed</div> &emsp;
-                        <div class="bath"><i class="fa-solid fa-bath"></i>1 kamar mandi</div> &emsp;
+                        <div class="bath"><i class="fa-solid fa-bath"></i>1 kamar mandi</div> &emsp;<br>
                     </div>
                     </div>
-                    </div>
+    </div>
+  
+    <!--description-->
+    <div class="description">
+      <con class="container-text">
+       <div class="checklist">
+                      <i class="fa-regular fa-circle-check"></i> pembantalan <br>
+                      <i class="fa-regular fa-circle-check"></i> pesan sekarang bayar nanti 
+                      <br>
+                      <br>
+          </div>
+                      <div class="wrap-text">
+                        <p>
+                          •Sarapan prasmanan sesuai tipe kamar yang di pesan.<br>
+                          •Penggunaan gym hotel gratis.<br>
+                          •Hotel ini memiliki parkir gratis, dengan batasan satu mobil perkamar.<br>
+                          •Minuman selamat datang dan makanan ringan disediakan gratis.<br>
+                          •Penggunaan akses internet/WI-FI gratis dikamar & area umum hotel<br>
+                        </p>
+                        <p>
+                          <br>
+                          <h3>Catatan:</h3>
+                          1. Jika anda ingin membatalkan reservasi haarap mengacu pada kebijakan<br> 
+                          pembatalan reservasi hotel.<br>
+                          2. Waktu check-in setelah jam 3 sore dan waktu check-out sebelum jam 12<br> 
+                          siang keesoka harinya.<br>
+                          3. Harga ini sudah termasuk biaya layanan 10% + pajak bisnis 5%.<br>
+                          4. Pihak hotel berhak melakukan penafsiran akhir dan perubahan isi acara.<br>
+                        </p>
+                      </div>
+          </con>
+          <con class="container-img">
+              <img src="../img-room/standard-double-room3.png" alt="" width="300px">   
+              <h2>Rincian tarif</h2>
+              <div class="coontainer-hrg">
+                  <b>Total harga <br>
+                    untuk 1 malam</b>
+                <p><b>Rp.2.000.000,00-</b></p>
+              </div>
+          </con>
+    </div>
+
+
+
+          <!--booking-->
+          <div class="container-booking">
+        <h2>pesan sekarang</h2>
+        <hr>
+        <br>
+        <br>
+        <form id="bookingForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+          <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+          <br>
+            <label for="checkIn">Check-In Date:</label>
+            <input type="date" id="checkIn" name="checkIn" required><br>
+          <br>
+            <label for="checkOut">Check-Out Date:</label>
+            <input type="date" id="checkOut" name="checkOut" required><br>
+          <br>
+            <button type="button" onclick="submitBookingForm()">Book Now</button>
+        </form>
+      </div>
+   
+
+                   
+<!--script images-->
     <script>
         let images = document.querySelectorAll("img");
 let wrapper = document.getElementById("wrapper");
@@ -111,191 +188,26 @@ function fixNav() {
 }
     </script>
 
-    <style>
-        * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+    
 
-body {
-  background-color: rgba(223, 223, 223, 0.795);
-  height: 300vh;
-}
+      <!--script booking-->
+      <script>function submitBookingForm() {
+    // Get form data
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const checkIn = document.getElementById('checkIn').value;
+    const checkOut = document.getElementById('checkOut').value;
 
-.container {
-  max-width: 1200px;
-  margin:  auto;
-}
+    // Save booking details to sessionStorage
+    sessionStorage.setItem('name', name);
+    sessionStorage.setItem('email', email);
+    sessionStorage.setItem('checkIn', checkIn);
+    sessionStorage.setItem('checkOut', checkOut);
 
-.logo {
-    display: flex;
-    align-items: center;
-    margin-left: 100px;
-    color: white;
+    // Redirect to payment page
+    window.location.href = './payment-room1.html';
 }
-.logo h3 {
-    font-size: 15px;
-}
- .logo h1 {
-    font-size: 35px;
-    font-family: 'Kaushan Script', cursive;
-    font-family: 'Pinyon Script', cursive;
-}
-.nav {
-  position: fixed;
-  background-color: chocolate;
-  top: 0;
-  left: 0;
-  right: 0;
-  transition: all 0.3s ease-in-out;
-  display: flex;
-  text-align: center;
-  z-index: 100;
-  justify-content: space-between;
-}
+</script>
 
-.nav .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
-  transition: all 0.3s ease-in-out;
-}
-.container .border-btm {
-    border-bottom: 2px solid white;
-}
-.nav ul {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  list-style: none;
-   margin-left: 100vh;
-    margin-right: 100px;
-}
-
-.nav a {
-  color: #fff;
-  text-decoration: none;
-  padding: 7px 15px;
-  transition: all 0.3s ease-in-out;
-}
-
-.nav a:hover {
-  color: #222;
-  transition: all 0.4s ease;
-}
-
-.nav.active a:hover {
-  color: #222;
-  transition: all 0.4s ease;
-}
-
-.nav.active .border-btm:hover {
-  color: chocolate;
-}
-
-.nav .border-btm:hover {
-  color: white;
-  transition: none;
-}
-
-/* ------- JavaScript -------*/
-.nav.active .border-btm {
-     border-bottom: 2px solid chocolate;
-}
-
-.nav.active {
-  background: white;
-}
-.nav.h1.active{
-    color: chocolate;
-} 
-.nav.active a {
-  color: chocolate;
-}
-/* -------------- */
-.room-name {
-    text-align: center;
-    position:static;
-    margin-top: 100px;
-}
-.room-name h1 {
-    font-size: 45px;
-    text-transform: capitalize;
-   font-family: 'Kaushan Script', cursive;
-    font-family: 'Pinyon Script', cursive;
-   text-shadow: 5px 3px 4px rgba(218, 165, 32, 0.233);
-}
-.room-name h3 {
-    font-size: 20px;
-}
-.img-gallery {
-  width: 80%;
-  margin: 100px auto 50px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 30px;
-}
-
-.img-gallery img {
-  width: 100%;
-  cursor: pointer;
-  transition: 1s ease;
-}
-
-.img-gallery img:hover {
-  transform: scale(0.8);
-  box-shadow: 0 32px 75px rgba(68, 77, 136, 0.2);
-}
-
-/* Wrapper */
-.imageWrapper {
-  width: 100%;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.9);
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: none;
-  justify-content: center;
-  align-items: center;
-  z-index: 100;
-}
-
-.imageWrapper img {
-  width: 90%;
-  max-width: 500px;
-}
-
-.imageWrapper span {
-  position: absolute;
-  top: 5%;
-  right: 5%;
-  font-size: 30px;
-  font-family: sans-serif;
-  color: #fff;
-  cursor: pointer;
-}
-.about {
-    display: block;
-    display: flex;
-    align-items: center;
-}
-
-.about table {
-   float: left;
-    margin-left: auto;
-}
-
-.about table tr td {
-    padding-left: 10px;
-    padding-right: 10px;
-}
-.kapasitas {
-    margin-left: 30px;
-     margin-right:auto;
-}
-    </style>
 </body>
 </html>

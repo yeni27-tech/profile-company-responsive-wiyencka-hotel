@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Booking Confirmation</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Booking Confirmation</h1>
+        <div id="confirmationDetails"></div>
+    </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+
+    const name = sessionStorage.getItem('name');
+    const email = sessionStorage.getItem('email');
+    const checkIn = sessionStorage.getItem('checkIn');
+    const checkOut = sessionStorage.getItem('checkOut');
+
+    
+    const cardNumber = sessionStorage.getItem('cardNumber');
+    const expiryDate = sessionStorage.getItem('expiryDate');
+    const cvv = sessionStorage.getItem('cvv');
+
+   
+    const confirmationDetails = document.getElementById('confirmationDetails');
+    confirmationDetails.innerHTML = `
+        <p>Thank you for your booking!</p>
+        <p>Name: ${name}</p>
+        <p>Email: ${email}</p>
+        <p>Check-In: ${checkIn}</p>
+        <p>Check-Out: ${checkOut}</p>
+        <p>Card Number: ${cardNumber}</p>
+        <p>Expiry Date: ${expiryDate}</p>
+        <p>total: Rp. 2.000.000,00-</p>
+        <p>CVV: ${cvv}</p>
+    `;
+});
+
+
+    </script>
+</body>
+</html>
+
