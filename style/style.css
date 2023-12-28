@@ -531,20 +531,52 @@ ul .active {
 }
 
 .contact {
-  background: rgb(15, 14, 14);
+  background: rgb(255, 255, 255);
   height:50vh;
   color: rgb(107, 107, 107);
   font-family: serif;
+  border-top: 2px solid rgb(246, 246, 246);
 }
 
 /*contact*/
 
 .contact {
+  display: flex;
+  justify-content: space-between;
+  gap: 30vh;
+  padding:10vh;
 }
 
 .alm {
-  display: flex;
   font-size: 20px;
-  gap: 100px;
+  float: right;
+  gap: 50vh;
+  display: flex;
+  padding-right: 10vh;
 }
 
+.alm > .line1 > p:nth-child(2) {
+  padding-bottom: 70px;
+  
+}
+
+.logocont {
+  padding: auto;
+}
+
+.logocont p:nth-child(1){
+  font-size: 30px;
+
+  color: maroon;
+}
+
+.logocont p:nth-child(2){
+  font-size: 30px;
+
+  color: maroon;
+}
+
+.logocont p:nth-child(3) {
+  font-size: 12px;
+  width: 200px;
+}
