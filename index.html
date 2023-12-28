@@ -136,7 +136,18 @@ viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
    </reservation>
    <!---->
    
+<center>
+  <div class="about">
+   <div class="isiabt">
+    <p>About Wiyencka Hotel</p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet nam veritatis odio dicta illo voluptatibus placeat dolorum accusamus ullam, sequi numquam distinctio cumque, beatae ut velit maiores facilis. Minima, ipsam!
+    </p>
+   </div>
+  </div>
+</center>
 
+<!--fasilities-->
    <div class="container">
       <div class="row">
         <div class="col-1">
@@ -186,19 +197,91 @@ function animation() {
   }
 }
 //selesai//
-
 </script>
 
-<center>
-  <div class="about">
-   <div class="isiabt">
-    <p>About Wiyencka Hotel</p>
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet nam veritatis odio dicta illo voluptatibus placeat dolorum accusamus ullam, sequi numquam distinctio cumque, beatae ut velit maiores facilis. Minima, ipsam!
-    </p>
-   </div>
-  </div>
-</center>
+
+<!--img rotate-->
+<div class="all-img">
+<div class="image-container">
+      <span style="--i: 1">
+        <img
+          src="./img-room/standard-double-room3.png"
+        />
+      </span>
+      <span style="--i: 2">
+        <img
+          src="./img-room/standard-double-room1.png"
+        />
+      </span>
+      <span style="--i: 3">
+        <img
+          src="./img-room/standard-double-room2.png"
+        />
+      </span>
+      <span style="--i: 4">
+        <img
+          src="./img-room/delux-tripel-room1.png"
+        />
+      </span>
+      <span style="--i: 5">
+        <img
+          src="./img-room/superior-twin-room1.png"
+        />
+      </span>
+      <span style="--i: 6">
+        <img
+          src="./img-room/superior-twin-room3.png"
+        />
+      </span>
+      <span style="--i: 7">
+        <img
+          src="./img-room/delux-tripel-room2.png"
+        />
+      </span>
+      <span style="--i: 8">
+        <img
+          src="./img-room/superior-twin-room2.png"
+        />
+      </span>
+    </div>
+
+    <div class="btn-container">
+      <button class="btn" id="prev"><</button>
+      <button class="btn" id="next">></button>
+      <div class="text-btn-container">
+        <p>
+          Wiyencka memberi anda banyak pilihan kamar<br>
+          yang pastinya sesuai dengan kebutuhan anda dan keluarga
+        </p>
+      </div>
+     
+    </div>
+    </div>
+    <script>
+      const imageContainer = document.querySelector(".image-container");
+const prevBtn = document.getElementById("prev");
+const nextBtn = document.getElementById("next");
+
+let x = 0;
+
+prevBtn.addEventListener("click", () => {
+  x = x + 45;
+  rotate();
+});
+
+nextBtn.addEventListener("click", () => {
+  x = x - 45;
+  rotate();
+});
+
+function rotate() {
+  imageContainer.style.transform = `perspective(1000px) rotateY(${x}deg)`;
+}
+
+    </script>
+
+
+
     
 <center>
   <div class="contact">
