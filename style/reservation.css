@@ -291,6 +291,13 @@ body {
  .ratings h4 {
   opacity: 0.8;
 }
+
+footer {
+    opacity: 0.6;
+    margin-top: 10vh;
+    font-size: 13.5px;
+    margin-bottom: 2vh;
+}
 @media screen and (max-width: 576px) {
   * {
   box-sizing: border-box;
