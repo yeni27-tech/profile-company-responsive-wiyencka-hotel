@@ -9,7 +9,6 @@ body {
   color: #000000;
   padding-bottom: 50px;
   background-color: rgba(223, 223, 223, 0.795);
-  text-transform: capitalize;
 }
 
 .container {
@@ -224,6 +223,7 @@ body {
     }
     .about h3 {
       font-size: 21px;
+      text-transform: capitalize;
     }
     .behavior {
         font-size: 15px;
@@ -290,6 +290,13 @@ body {
 }
  .ratings h4 {
   opacity: 0.8;
+}
+
+footer {
+    opacity: 0.6;
+    margin-top: 10vh;
+    font-size: 13.5px;
+    margin-bottom: 2vh;
 }
 @media screen and (max-width: 576px) {
   * {
