@@ -15,10 +15,6 @@
 
             <label for="expiryDate">Expiry Date:</label>
             <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
-             
-            <label for="">total pembayaran:</label>
-            <input type="" value="Rp. 2.000.000,00.-">
-
 
             <label for="cvv">CVV:</label>
             <input type="text" id="cvv" name="cvv" placeholder="XXX" required>
@@ -39,7 +35,7 @@
         sessionStorage.setItem('expiryDate', expiryDate);
         sessionStorage.setItem('cvv', cvv);
 
-        window.location.href = './comfirmation-room1.html';
+        window.location.href = './comfirmation.html';
     } else {
         alert('Please fill in all required fields.');
     }
