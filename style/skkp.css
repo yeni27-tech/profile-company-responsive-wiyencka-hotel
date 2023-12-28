@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(223, 223, 223, 0.795);
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin:  auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    color: white;
+}
+.logo h3 {
+    font-size: 15px;
+}
+ .logo h1 {
+    font-size: 35px;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Pinyon Script', cursive;
+}
+.nav {
+  position: fixed;
+  background-color: chocolate;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  text-align: center;
+  z-index: 100;
+  justify-content: space-between;
+}
+
+.nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  transition: all 0.3s ease-in-out;
+}
+.container .border-btm {
+    border-bottom: 2px solid white;
+}
+.nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+   margin-left: 100vh;
+    margin-right: 100px;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 7px 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav a:hover {
+  color: #222;
+  transition: all 0.4s ease;
+}
+
+.nav.active a:hover {
+  color: #222;
+  transition: all 0.4s ease;
+}
+
+.nav.active .border-btm:hover {
+  color: chocolate;
+}
+
+.nav .border-btm:hover {
+  color: white;
+  transition: none;
+}
+
+    .kebijakan-pembatalan {
+        background: #fff;
+        text-align: start;
+        margin-top: 17vh;
+        padding: 5vh;
+        margin-left: 150px;
+        margin-right: 150px;
+        border-radius: 2vh;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    }
+    .syarat-ketentuan {
+         background: #fff;
+        text-align: start;
+        margin-top: 5vh;
+        padding: 5vh;
+         margin-left: 150px;
+        margin-right: 150px;
+        border-radius: 2vh;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    }
+    .wrap-pembatalan {
+         display: block;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .wrap-ketentuan {
+        display: block;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+footer {
+    opacity: 0.6;
+    margin-top: 10vh;
+    font-size: 13.5px;
+    margin-bottom: 2vh;
+}
