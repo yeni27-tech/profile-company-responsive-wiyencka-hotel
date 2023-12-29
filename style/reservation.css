@@ -416,8 +416,8 @@ body {
    
     .wrap-date {
         background: white;
-        scale: 2;
-        margin-top: 130vh;
+        scale: 2.4;
+        margin-top: 110vh;
         width: max-content;
         border-radius: 1vh;
         border: 2px solid goldenrod;
@@ -429,7 +429,7 @@ body {
     }
     .date label {
         color: #000000;
-        margin-left: 100px;
+        margin-left: 0px;
     }
 
     .date input {
