@@ -35,6 +35,18 @@ header {
   width:1300px;
 }
 
+.navbar span {
+  position: fixed;
+  margin-top: 10vh;
+  margin-left: 0vh;
+}
+
+.logo {
+  position: absolute;
+  display: block;
+  margin-left: 85vh;
+  margin-right: 100vh;
+}
 
 .logo>h1 {
   font-family: 'Kaushan Script', cursive;
@@ -42,18 +54,16 @@ header {
   color: rgba(75, 0, 0, 0.811);
   font-size: 42px; 
   margin-top: 10px;
-  margin-right: 100vh;
+
 }
 .logo > h6 {
   font-size: 15px;
   font-family: monospace;
   justify-content: space-between;
   text-align: center;
-  margin-right: 100vh;
   color:  rgb(115, 115, 0);;
 }
 .logo >hr {
-  margin-right: 100vh;
   background-color: black;
   border: 1px solid black;
 }
@@ -472,6 +482,11 @@ button:hover {
   line-height: 22px;
   margin: 15px 0 30px;
   max-width: 500px;
+}
+
+ul .btn {
+  background-color: #777;
+  border-radius: 50%;
 }
 
 ul {
