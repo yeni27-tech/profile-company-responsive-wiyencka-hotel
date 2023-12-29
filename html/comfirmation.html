@@ -179,7 +179,51 @@ body {
         padding: 7vh;
         font-size: large;
        }
-   
+
+   @media screen and (max-width: 576px) {
+  * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  width: max-content;
+  background-image: none;
+}
+.logo h1 {
+  font-size: 80px;
+}
+.logo h3 {
+  font-size: 25px;
+}
+.nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+   margin-left: 10vh;
+    margin-right: 90vh;
+    font-size: 35px;
+}
+footer {
+    opacity: 0.8;
+    margin-top: 10vh;
+    font-size: 20px;
+    margin-bottom: 2vh;
+}
+.container-com {
+  scale: 1.7;
+  margin-top: 80vh;
+  display: block;
+  padding: 5vh 4vh;
+}
+#paymentForm input[type="text"] {
+  scale: 0.9;
+  font-size: 20px;
+}
+   }
     </style>
 </body>
 </html>
