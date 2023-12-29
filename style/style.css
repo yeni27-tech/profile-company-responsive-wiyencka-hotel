@@ -391,7 +391,6 @@ header {
 
 .btn-rest {
    background:rgb(246, 148, 1);
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
    padding: 1.5rem;
    margin-right: 5vh;
    margin-left: 17.5vh;
@@ -417,6 +416,8 @@ header {
     background: crimson;
     transition: 0.4s ease;
     border: none;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2px;
 }
 /*selesai*/
 
@@ -484,17 +485,12 @@ button:hover {
   max-width: 500px;
 }
 
-ul .btn {
-  background-color: #777;
-  border-radius: 50%;
-}
-
-ul {
+.row ul {
   position: absolute;
   bottom: 30px;
 }
 
-ul li {
+.row ul li {
   list-style: none;
   width: 15px;
   height: 15px;
@@ -505,7 +501,7 @@ ul li {
   cursor: pointer;
 }
 
-ul .active {
+.row ul .active {
   background: crimson;
 }
 
@@ -523,6 +519,8 @@ ul .active {
   }
 }
 
+
+/*--------------------*/
 .about {
   background: white;
   height: 50vh;
