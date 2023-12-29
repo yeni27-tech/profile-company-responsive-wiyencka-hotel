@@ -423,100 +423,63 @@ header {
 
 
 
-/*fasilities*/
-.container {
-   background-color: rgba(255, 255, 255, 0);
+/*fasilities*/     
+  .services{
+    background-color: #fff;
+}
+.services p:nth-child(1) {
+  text-align: center;
+  font-size: 25px;
+  color: black;
 }
 
-button {
-  margin-right: -20px;
-  padding: 15px 40px;
-  border: 0;
-  outline: none;
-  border-radius: 25px;
-  background: chocolate;
-  color: #fff;
-  font-size: 14px;
-  cursor: pointer;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+.main-headings:hover {
+  transform: skew(30deg);
 }
 
-button:hover {
-  background: crimson;
-  transition: all 0.4s ease;
-}
-
-.row {
+/* CARDS */
+.cards {
   display: flex;
-  justify-content: space-between;
-  background: rgb(255, 255, 255);
-  overflow: hidden;
-  
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.col-1 .col2 {
-  overflow: hidden;
+.card {
+  padding: 20px;
+  margin: 20px;
+  transition-property: all;
+  transition-duration: 1s;
+  border: 1px solid #ccc;
 }
 
-.col-1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.col-2 img {
-  width: 30rem;
-  height: 80vh;
-  margin-bottom: -5px;
-  margin-right: 5vh;
-  margin-top: 5vh;
-  margin-bottom: 5vh;
-}
-
-.col-1 {
-  padding: 8% 5%;
-  position: relative;
-}
-
-.col-1 p {
-  color: #777;
-  line-height: 22px;
-  margin: 15px 0 30px;
-  max-width: 500px;
-}
-
-.row ul {
-  position: absolute;
-  bottom: 30px;
-}
-
-.row ul li {
-  list-style: none;
-  width: 15px;
-  height: 15px;
-  display: inline-block;
-  background: #bfbfbf;
-  border-radius: 50%;
-  margin-right: 15px;
+.card:hover {
+  box-shadow: 2px 2px 2px 2px #ccc;
+  transform: scale(1.1);
   cursor: pointer;
 }
 
-.row ul .active {
-  background: crimson;
+.card-image {
+  width: 300px;
+  height: 250px;
 }
 
-/* JavaScript */
-.zoom {
-  animation: zoom 1s;
+.card p {
+  color: rgb(39, 39, 39);
+  font-family: sans-serif;
+  padding: 10px;
+  text-align: center;
 }
 
-@keyframes zoom {
-  0% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
+.img-one img{
+  width: 300px;
+  height: 220px;
+}
+.img-two img {
+  width: 300px;
+}
+.img-three img {
+  width: 300px;
 }
 
 
@@ -576,17 +539,22 @@ button:hover {
 }
 
 .logocont p:nth-child(1){
-  font-size: 30px;
-
-  color: maroon;
+  font-size: 33px;
+   font-family: 'Kaushan Script', cursive;
+  font-family: 'Pinyon Script', cursive;
+  color: rgba(75, 0, 0, 0.811);
+  font-weight: bold;
 }
 
 .logocont p:nth-child(2){
-  font-size: 30px;
-
-  color: maroon;
+  font-size: 15px;
+   text-transform: uppercase;
+  color: goldenrod;
 }
 
+.logocont hr {
+  width: 150px;
+}
 .logocont p:nth-child(3) {
   font-size: 12px;
   width: 200px;

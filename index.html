@@ -140,7 +140,7 @@ viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
    <!---->
    
 <center>
-  <div class="about">
+  <div id="about" class="about">
    <div class="isiabt">
     <p>About Wiyencka Hotel</p>
     <p>
@@ -184,66 +184,7 @@ viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
     <br>
     <br>
     </section>
-   
-    <style>
-  .services{
-    background-color: #fff;
-}
-.services p:nth-child(1) {
-  text-align: center;
-  font-size: 25px;
-  color: black;
-}
-
-.main-headings:hover {
-  transform: skew(30deg);
-}
-
-/* CARDS */
-.cards {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.card {
-  padding: 20px;
-  margin: 20px;
-  transition-property: all;
-  transition-duration: 1s;
-  border: 1px solid #ccc;
-}
-
-.card:hover {
-  box-shadow: 2px 2px 2px 2px #ccc;
-  transform: scale(1.1);
-  cursor: pointer;
-}
-
-.card-image {
-  width: 300px;
-  height: 250px;
-}
-
-.card p {
-  color: rgb(39, 39, 39);
-  font-family: sans-serif;
-  padding: 10px;
-  text-align: center;
-}
-
-.img-one img{
-  width: 300px;
-  height: 220px;
-}
-.img-two img {
-  width: 300px;
-}
-.img-three img {
-  width: 300px;
-}
-</style>
+  
 
 
 <!--img rotate-->
@@ -304,7 +245,7 @@ viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
     </div>
     </div>
     <script>
-      const imageContainer = document.querySelector(".image-container");
+const imageContainer = document.querySelector(".image-container");
 const prevBtn = document.getElementById("prev");
 const nextBtn = document.getElementById("next");
 
@@ -323,21 +264,22 @@ nextBtn.addEventListener("click", () => {
 function rotate() {
   imageContainer.style.transform = `perspective(1000px) rotateY(${x}deg)`;
 }
-
     </script>
 
 
 
     
 <center>
-  <div class="contact">
+  <section id="footer" class="contact">
 
     <div class="logocont">
-      <p>Wiyencka\</p>
-      <p>Hotel</p>
+      <p>WiyenckA\</p>
+      <hr>
+      <p>H&emsp;O&emsp;T&emsp;E&emsp;L</p>
+      <hr>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae dignissimos voluptatum quod accusantium commodi.</p>
     </div>
-
+<!--klo ga sesuai kmu edit aja-->
     <div class="alm">
         <div class="line1">
                 <p>Find Us</p>
@@ -357,7 +299,8 @@ function rotate() {
         </div>
     </div>
 
-  </div>
+  </section>
 </center>
+</style>
    </body>
      </html>
