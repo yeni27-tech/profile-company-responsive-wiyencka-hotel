@@ -389,6 +389,13 @@ header {
    margin-left: 15vh;
 }
 
+.text-btn-container p {
+  color: #fff;
+  outline: black;
+  text-shadow: 1px 1px 1px rgb(74, 72, 72);
+
+}
+
 .btn-rest {
    background:rgb(246, 148, 1);
    padding: 1.5rem;
@@ -553,7 +560,7 @@ header {
 }
 
 .logocont hr {
-  width: 150px;
+  width: 100px;
 }
 .logocont p:nth-child(3) {
   font-size: 12px;
@@ -568,7 +575,7 @@ header {
   align-items: center;
   text-align: center;
   height: 100vh;
-  background: linear-gradient(white,rgb(196, 195, 195),rgb(196,195,195),rgb(196,195,195),rgb(196,195,195),rgb(196,195,195),rgb(196,195,195),rgb(196,195,195),white);
+  background: linear-gradient(white,rgb(196, 195, 195),rgb(196,195,195),rgb(196,195,195),rgb(196,195,195),rgb(196,195,195));
   overflow: hidden;
 }
 
