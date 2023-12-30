@@ -1133,18 +1133,8 @@ body {
 /*contact*/
 
 .contact {
-  display: flex;
-  justify-content: space-between;
-  gap: 30vh;
-  padding:10vh;
-}
-
-.alm {
-  font-size: 20px;
-  float: right;
-  gap: 50vh;
-  display: flex;
-  padding-right: 10vh;
+  background-color: white;
+  height: 80vh;
 }
 
 .alm > .line1 > p:nth-child(2) {

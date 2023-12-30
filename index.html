@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Pinyon+Script&family=Tangerine&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="./images/logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
       <!--===Navbar===-->
       <div class="navbar" id="navbar">
@@ -464,28 +465,72 @@ window.onload = function() {
       <hr>
       <p>H&emsp;O&emsp;T&emsp;E&emsp;L</p>
       <hr>
-      <p>Pangkuan Kemewahan, kami 
+      <p>Pangkuan Kemewahan, kami<br> 
         mengundang anda untuk mencobanya</p>
     </div>
 <!--klo ga sesuai kmu edit aja-->
-    <div class="alm">
-        <div class="line1">
-                <p>Find Us</p>
-                <p><img src="">Alamat</p>
+    <i class="alm">
+      <div class="flex-alamat">
+        <div class="alamat">
+          <h2>
+          find Us<br>
+          Alamat
+        </h2>
+          Jln. Bahagia, kota Cirebon,<br>
+          Jawa Barat, Indonesia</div>
+      </div>
 
-       
-                <p>Follow Us</p>
-                <p>Sosmed</p>
-                
-               
+      <i class="contact-us">
+        <h2>
+          Contact Us<br>
+        </h2>
+        <div class="fa-sharp fa-solid fa-envelope"></i> &emsp;@wiyencaindonesia@gmail.com<br>
+        <i class="fa-sharp fa-solid fa-phone"></i>&emsp;
+         +62123456789
+      </div>
+      </div>
+      
+      <div class="sosmed">
+        <h2>
+        Follow Us<br>
+        Sosmed
+        </h2>
         </div>
-
-        <div class="line3">
-          <p>Contact Us</p>
-          <p><img src="">Telp</p>
-          <p><img src="">E-Mail</p>
-        </div>
+        <div class="flex-sosmed">
+        <i class="fa-sharp fa-solid fa-phone"></i>
+        <i class="fa-brands fa-tiktok"></i>
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-line"></i>
+      </div>
     </div>
+
+    <style>
+      .flex-alamat {
+        display: flex;
+        align-items: center;
+      }
+      .alamat {
+        flex-direction: none;
+      }
+      .contact-us {
+        position: absolute;
+        margin-left: 50vh;
+      }
+      .flex-sosmed  {
+        display: flex;
+        align-items: center;
+      }
+      .flex-sosmed i {
+        margin: 10px;
+      }
+      .flex-sosmed h2 {
+        flex-direction: none;
+      }
+      .alm {
+        font-size: 20px;
+        margin-left: 50vh;
+      }
+    </style>
 
   </section>
 </center>
