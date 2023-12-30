@@ -227,6 +227,12 @@ body {
     margin-right: auto;
     margin-left: 50px;
   }
+
+  .container-img > h2 {
+    font-size: 8px;
+    padding: 4px;
+  }  
+  
   .coontainer-hrg {
     font-size: 18px;
     display: flex;
