@@ -23,6 +23,27 @@ const scale = (num, in_min, in_max, out_min, out_max) => {
 //selesai//
 
 
+//nav//
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+//slsi//
+//tricky//
+  document.addEventListener("scroll", function () {
+    var navbar = document.getElementById("navbar");
+    if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+        navbar.style.backgroundColor = "#F0F0F0"; // Change the background color on scroll
+    } else {
+        navbar.style.backgroundColor = "transparent"; // Reset the background color when not scrolled
+    }
+});
+//slsi//
 
 //slide menu//
 function openNav() {
@@ -130,60 +151,139 @@ function slideIndicator(toIndex) {
 
 
 
-//register//
-//-->input//
- function updateItemPrice() {
-      const selectedItem = document.getElementById("itemName");
-      const selectedOption = selectedItem.options[selectedItem.selectedIndex];
-      const price = parseFloat(selectedOption.getAttribute("data-price"));
+//img rotation//
+const imageContainer = document.querySelector(".image-container");
+const prevBtn = document.getElementById("prev");
+const nextBtn = document.getElementById("next");
 
-      
-      selectedItem.setAttribute("data-calculated-price", price.toFixed(2));
-    }
+let x = 0;
 
-    function calculateAndRedirect() {
-      const customerName = document.getElementById("customerName").value;
-      const customerAddress = document.getElementById("customerAddress").value;
-      const itemName = document.getElementById("itemName").value;
-      const quantity = parseInt(document.getElementById("quantity").value);
+prevBtn.addEventListener("click", () => {
+  x = x + 45;
+  rotate();
+});
 
-     
-      const calculatedPrice = parseFloat(document.getElementById("itemName").getAttribute("data-calculated-price"));
+nextBtn.addEventListener("click", () => {
+  x = x - 45;
+  rotate();
+});
 
-      
-      const subtotal = calculatedPrice * quantity;
+function rotate() {
+  imageContainer.style.transform = `perspective(1000px) rotateY(${x}deg)`;
+}
+//slsi//
 
-     
-      sessionStorage.setItem("orderDetails", JSON.stringify({
-        customerName: customerName,
-        customerAddress: customerAddress,
-        itemName: itemName,
-        itemPrice: calculatedPrice, 
-        quantity: quantity,
-        subtotal: subtotal,
-     
-      }));
+//REVIEW//
+  // vars
+'use strict'
+var	testim = document.getElementById("testim"),
+		testimDots = Array.prototype.slice.call(document.getElementById("testim-dots").children),
+    testimContent = Array.prototype.slice.call(document.getElementById("testim-content").children),
+    testimLeftArrow = document.getElementById("left-arrow"),
+    testimRightArrow = document.getElementById("right-arrow"),
+    testimSpeed = 4500,
+    currentSlide = 0,
+    currentActive = 0,
+    testimTimer,
+		touchStartPos,
+		touchEndPos,
+		touchPosDiff,
+		ignoreTouch = 30;
+;
 
-      
-      window.location.href = "./html/output-register.html";
-    }
-    //output-->//
-      
-    const storedOrderDetails = sessionStorage.getItem("orderDetails");
-    const orderDetails = JSON.parse(storedOrderDetails);
+window.onload = function() {
 
+    // Testim Script
+    function playSlide(slide) {
+        for (var k = 0; k < testimDots.length; k++) {
+            testimContent[k].classList.remove("active");
+            testimContent[k].classList.remove("inactive");
+            testimDots[k].classList.remove("active");
+        }
+
+        if (slide < 0) {
+            slide = currentSlide = testimContent.length-1;
+        }
+
+        if (slide > testimContent.length - 1) {
+            slide = currentSlide = 0;
+        }
+
+        if (currentActive != currentSlide) {
+            testimContent[currentActive].classList.add("inactive");            
+        }
+        testimContent[slide].classList.add("active");
+        testimDots[slide].classList.add("active");
+
+        currentActive = currentSlide;
     
-    document.getElementById("output").innerHTML = `
-      <p><strong>Customer Name:</strong>  ${orderDetails.customerName}</p>
-      <p><strong>Customer Address:</strong>  ${orderDetails.customerAddress}</p>
-      <p><strong>Item Name:</strong>  ${orderDetails.itemName}</p>
-      <p><strong>Item Price:</strong> Rp ${orderDetails.itemPrice.toFixed(2)}</p>
-      <p><strong>Quantity:</strong>  ${orderDetails.quantity}</p>
-      <hr class="dashed-inline"><br>
-      <p><strong>Subtotal:</strong>Rp  ${orderDetails.subtotal.toFixed(2)}</p>
-    `;
-    //selesai//
+        clearTimeout(testimTimer);
+        testimTimer = setTimeout(function() {
+            playSlide(currentSlide += 1);
+        }, testimSpeed)
+    }
 
+    testimLeftArrow.addEventListener("click", function() {
+        playSlide(currentSlide -= 1);
+    })
 
+    testimRightArrow.addEventListener("click", function() {
+        playSlide(currentSlide += 1);
+    })    
+
+    for (var l = 0; l < testimDots.length; l++) {
+        testimDots[l].addEventListener("click", function() {
+            playSlide(currentSlide = testimDots.indexOf(this));
+        })
+    }
+
+    playSlide(currentSlide);
+
+    // keyboard shortcuts
+    document.addEventListener("keyup", function(e) {
+        switch (e.keyCode) {
+            case 37:
+                testimLeftArrow.click();
+                break;
+                
+            case 39:
+                testimRightArrow.click();
+                break;
+
+            case 39:
+                testimRightArrow.click();
+                break;
+
+            default:
+                break;
+        }
+    })
+		
+		testim.addEventListener("touchstart", function(e) {
+				touchStartPos = e.changedTouches[0].clientX;
+		})
+	
+		testim.addEventListener("touchend", function(e) {
+				touchEndPos = e.changedTouches[0].clientX;
+			
+				touchPosDiff = touchStartPos - touchEndPos;
+			
+				console.log(touchPosDiff);
+				console.log(touchStartPos);	
+				console.log(touchEndPos);	
+
+			
+				if (touchPosDiff > 0 + ignoreTouch) {
+						testimLeftArrow.click();
+				} else if (touchPosDiff < 0 - ignoreTouch) {
+						testimRightArrow.click();
+				} else {
+					return;
+				}
+			
+		})
+}
+
+//selesai//
 
    
