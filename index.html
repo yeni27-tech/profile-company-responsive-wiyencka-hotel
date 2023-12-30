@@ -11,32 +11,22 @@
   <link rel="shortcut icon" href="./images/logo.png">
 </head>
       <!--===Navbar===-->
-    <header>
-       <div class="navbar">
-      <nav id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a class="home" href="#">home</a>
-        <a class="about " href="#">about us</a>
-        <a class="service" href="#">rooms</a>
-        <a class="team" href="#">facilities</a>
-        <a class="contact" href="#">Contact</a> 
-      </nav>
-
-      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-        <script src="./js/java script.js"></script>
-        </header>
- 
+      <div class="navbar" id="navbar">
+        <a href="./index.html"><img src="./images/logo.png"></a>
+    </div>
 
 
-      
-        <div class="logo">
-          <h1>WiyenckA\</h1>
-          <hr>
-          <h6>H&emsp; O&emsp; T&emsp; E&emsp; L</h6>
-          <hr>
-        </div>
-        <script src="../java script.js"></script>
-       </div>
+
+    <script>
+        document.addEventListener("scroll", function () {
+    var navbar = document.getElementById("navbar");
+    if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+        navbar.style.backgroundColor = "white"; // Change the background color on scroll
+    } else {
+        navbar.style.backgroundColor = "transparent"; // Reset the background color when not scrolled
+    }
+});
+    </script>
     
       <!---->
 
@@ -205,10 +195,7 @@ viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
       <button class="btn" id="prev"><</button>
       <button class="btn" id="next">></button>
       <div class="text-btn-container">
-        <p>
-          Wiyencka memberi anda banyak pilihan kamar<br>
-          yang pastinya sesuai dengan kebutuhan anda dan keluarga
-        </p>
+        
       </div>
      
     </div>

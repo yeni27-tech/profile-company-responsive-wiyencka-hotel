@@ -20,100 +20,23 @@ body {
 }
 
 /*navbar*/
-header {
-   position: fixed;
-   z-index: 100;
-}
-
 .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-right: 50px;
-  padding-left: 50px;
-  background: none;
-  width:1300px;
-}
-
-.navbar span {
+  overflow: hidden;
+  background-color: transparent;
+  transition: background-color 0.5s;
   position: fixed;
-  margin-top: 10vh;
-  margin-left: 0vh;
+  width: 100%;
+  z-index: 100;
 }
 
-.logo {
-  position: absolute;
+.navbar > a > img {
+  height: auto;
+  width: 35vh;
+  padding-top: 5px;
+  cursor: pointer;
   display: block;
-  margin-left: 85vh;
-  margin-right: 100vh;
-}
-
-.logo>h1 {
-  font-family: 'Kaushan Script', cursive;
-  font-family: 'Pinyon Script', cursive;
-  color: rgba(75, 0, 0, 0.811);
-  font-size: 42px; 
-  margin-top: 10px;
-
-}
-.logo > h6 {
-  font-size: 15px;
-  font-family: monospace;
-  justify-content: space-between;
-  text-align: center;
-  color:  rgb(115, 115, 0);;
-}
-.logo >hr {
-  background-color: black;
-  border: 1px solid black;
-}
-
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #000000c1;
-  backdrop-filter: blur(2px);
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-  text-align:center;
-}
-
-.sidenav a {
-  padding: 40px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #ffffff;
-  display: block;
-  transition: 0.4s;
-  line-height: 2;
-  font-family: 'verdana';
-  text-transform: capitalize;
-}
-
-.sidenav a:hover{
-  color: #9c9c9c;
-  border-bottom-left-radius: 1px solid white;
-  scale: 100px;
-  transform: scale(1.2);
-}
-
-.closebtn {
-  position: absolute;
-  top: -40px;
-  right: 44px;
-  font-size: 100px;
-  margin-left: 50px;
-}
-
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  margin-left: auto;
+  margin-right: auto;
 }
 /*selesai*/
 
@@ -202,19 +125,33 @@ header {
    bottom: 0;
    overflow: hidden;
    z-index: -100;
+ 
    /*webkit ku remove*/  
 }
 
-.full {
+.fullscreen > .full {
    position: absolute;
-   top: 0;
-   left: 0;
+   width: 100%;
+
 }
+
+
 
 /* carousel */
 .carousel_img{
    display: block;
    width: 100%;
+}
+
+@media (max-width: 200vh) {
+  .carousel  {
+    height: 30%;
+  }
+
+  .carousel_caption {
+    font-size: 12px;
+    margin-top: 25vh;
+  }
 }
 
 .carousel_caption{
