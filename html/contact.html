@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiyencka Hotel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Pinyon+Script&family=Tangerine&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./images/logo.png">
+  <link rel="stylesheet" href="../style/contact.css">
+</head>
+<body>
+     <!--navbar-->
+     <nav class="nav">
+        <logo class="logo">
+            <a href="../html/reservation.html">
+            <h1>WiyenckA\</h1>
+            <h3>H O T E L</h3>
+            </a>
+        </logo>
+      <div class="container">
+        <ul>
+          <li><a href="../index.html">Back</a></li>
+          <li><a href="#"class="border-btm">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+
+
+    <!---CONTACT-->
+    <div class="all">
+    <small>We appreciate your valuable comments. We will respond to your questions and improve our services as soon as possible.</small>
+<div class="wrapper centered">
+  <article class="letter">
+    <div class="side">
+      <h3>Send a message as a correction</h3>
+      <br>
+      <p>
+        <textarea placeholder="Your message"></textarea>
+      </p>
+    </div>
+    <div class="side">
+      <p>
+        <input type="text" placeholder="Your name" >
+      </p>
+      <p>
+        <input type="email" placeholder="Your email" >
+      </p>
+      <p>
+        <button id="sendLetter">Send</button>
+      </p>
+    </div>
+  </article>
+  <div class="envelope front"></div>
+  <div class="envelope back"></div>
+</div>
+
+<p class="result-message centered">Thank you for your message</p>
+
+<script>
+    function addClass() {
+  document.body.classList.add("sent");
+}
+
+sendLetter.addEventListener("click", addClass);
+</script>
+</div>
+
+<footer>
+            <center>
+                ©Yeni Faturohmah & Khalila Puspita
+            </center>
+        </footer>
+
+</body>
+</html>
