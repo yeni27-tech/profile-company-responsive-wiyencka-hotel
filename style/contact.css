@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #eaeaea;
+  background-color: rgba(223, 223, 223, 0.795);
   font-family: sans-serif;
 }
 
@@ -94,7 +94,7 @@ body {
   margin: 0;
   padding: 0;
   color: #4e5e72;
-  background-color:  #83a2ff96;
+  background-color:  #eaeaea;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   overflow: hidden;
