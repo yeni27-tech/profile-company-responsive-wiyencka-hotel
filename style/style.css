@@ -11,7 +11,7 @@ body {
   font-family: "Lato", sans-serif;
   scroll-behavior: smooth;
   height: 300vh;
-  background: #e6e6e6;
+  background: #ffffff;
 }
 
 /*loading teks*/
@@ -363,8 +363,7 @@ body {
 
 .wrap-all-child-rest {
    display: flex;
-   margin-left:20vh;
-   margin-left: 20vh;
+   margin-left: 33.1vh;
    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
    align-items: center;
 }
@@ -374,7 +373,7 @@ body {
 }
 
 .wrap-all-child-rest> .check-out, .n-of-guest, .btn-rest {
-   margin-left: 15vh;
+   margin-left: 4vh;
 }
 
 .text-btn-container p {
@@ -1104,12 +1103,10 @@ body {
 
 
 
-/*-----FOOTER-----------*/
+/*-----ABOUT-----------*/
 .about {
   background: white;
   height: 50vh;
- 
-  border-top: 2px solid rgb(246, 246, 246);
 }
 
 .isiabt {
