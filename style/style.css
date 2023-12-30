@@ -1267,3 +1267,15 @@ header {
           margin-left: 46vh;
           color: #ffffffd8;
         }
+
+   
+/*-------------RESPONSIVE---------*/
+@media screen and (max-width: 576px) {
+  BODY {
+    width: max-content;
+  }
+  .fullscreen .full source{
+  display: none;
+   /*webkit ku remove*/  
+}
+}
