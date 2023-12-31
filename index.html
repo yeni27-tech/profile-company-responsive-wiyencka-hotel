@@ -47,9 +47,9 @@ function closeNav() {
         document.addEventListener("scroll", function () {
     var navbar = document.getElementById("navbar");
     if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-        navbar.style.backgroundColor = "#F0F0F0"; // Change the background color on scroll
+        navbar.style.backgroundColor = "#F0F0F0"; 
     } else {
-        navbar.style.backgroundColor = "transparent"; // Reset the background color when not scrolled
+        navbar.style.backgroundColor = "transparent"; 
     }
 });
     </script>
@@ -93,7 +93,7 @@ function closeNav() {
             </div>
          </div>
       </div>
-
+<script src="./js/java script.js"></script>
 
       <div class="carousel_indicator">
          <button class="carousel_dot carousel_dot__active"></button>
@@ -170,7 +170,7 @@ viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
 
 
 <!--img rotate-->
-
+<a href="./html/reservation.html">
 <div class="all-img" id="rooms">
 <div class="image-container">
       <span style="--i: 1">
@@ -224,6 +224,10 @@ viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
      
     </div>
     </div>
+    </a>
+
+
+
     <script>
 const imageContainer = document.querySelector(".image-container");
 const prevBtn = document.getElementById("prev");
@@ -245,6 +249,7 @@ function rotate() {
   imageContainer.style.transform = `perspective(1000px) rotateY(${x}deg)`;
 }
     </script>
+
 
 
  <!-- SERVICES -->
@@ -474,6 +479,7 @@ window.onload = function() {
   	 				<li><a href="#">Fasilitas</a></li>
   	 				<li><a href="#">Review</a></li>
             <li><a href="./html/contact.html">Contact</a></li>
+            <li><a href="./html/reservation.html">Reservasi</a></li>
   	 			</ul>
   	 		</div>
   	 		<div class="footer-col">
@@ -496,105 +502,6 @@ window.onload = function() {
   	 </div>
   </footer>
 
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-.logocont {
-  text-align: center;
-  margin-left: 0px;
-}
-.logocont h5 {
-  color: #575555;
-}
-.container-footer{
-	max-width: 1170px;
-	margin:auto;
-  line-height: 1.5;
-	font-family: 'Poppins', sans-serif;
-}
-.row{
-	display: flex;
-	flex-wrap: wrap;
-}
-ul{
-	list-style: none;
-}
-.footer{
-	background-color: #fff;
-    padding: 70px 0;
-}
-.footer-col{
-   width: 25%;
-   padding: 0 15px;
-}
-.footer-col h4{
-	font-size: 18px;
-	color: #575555;
-	text-transform: capitalize;
-	margin-bottom: 35px;
-	font-weight: 500;
-	position: relative;
-}
-.footer-col h4::before{
-	content: '';
-	position: absolute;
-	left:0;
-	bottom: -10px;
-	background-color: #e91e63;
-	height: 2px;
-	box-sizing: border-box;
-	width: 50px;
-}
-.footer-col ul li:not(:last-child){
-	margin-bottom: 10px;
-}
-.footer-col ul li a{
-	font-size: 17px;
-	text-transform: capitalize;
-  color: #434343;;
-	text-decoration: none;
-	font-weight: 300;
-	color: #bbbbbb;
-	display: block;
-	transition: all 0.3s ease;
-}
-.footer-col ul li a:hover{
-	color: rgb(165, 19, 49);
-	padding-left: 8px;
-}
-.footer-col .social-links a{
-	display: inline-block;
-	height: 40px;
-	width: 40px;
-	background-color: rgba(31, 31, 31, 0.2);
-	margin:0 10px 10px 0;
-	text-align: center;
-	line-height: 40px;
-	border-radius: 50%;
-	color: #ffffff;
-	transition: all 0.5s ease;
-}
-.footer-col .social-links a:hover{
-	color: #ffffff;
-	background-color: rgb(165, 19, 49);
-}
-
-/*responsive*/
-@media(max-width: 767px){
-  .footer-col{
-    width: 50%;
-    margin-bottom: 30px;
-}
-}
-@media(max-width: 574px){
-  .footer-col{
-    width: 100%;
-}
-}
-
-
-
-
-  </style>
 
 
 <!--JAVA SCRIPT-->
