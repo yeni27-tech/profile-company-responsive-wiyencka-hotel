@@ -49,7 +49,7 @@ body {
   padding-top: 5px;
   cursor: pointer;
   display: block;
-  margin-right: auto;
+  margin-right: 5vh;
   margin-left: auto;
 }
 
@@ -595,7 +595,7 @@ body {
   z-index: 10;
   position: absolute;
   margin: 0;
-    margin-top: 450vh;
+    margin-top: 420vh;
     width: 100%;
     height: max-content;
     font-size: 16px;
@@ -1241,82 +1241,6 @@ body {
 
 
 
- .all-img {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 150vh;
-  background: linear-gradient(white,rgb(196, 195, 195),rgb(196,195,195),rgb(196,195,195),rgb(196,195,195),rgb(196,195,195),white);
-  overflow: hidden;
-}
-
-.image-container {
-  margin-top: 20px;
-  position: relative;
-  width: 200px;
-  height: 200px;
-  transform-style: preserve-3d;
-  transform: perspective(1000px) rotateY(0deg);
-  transition: transform 0.7s;
-}
-
-.image-container span {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
-}
-
-.image-container span img {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-}
-
-.btn-container {
-  position: relative;
-  width: 80%;
-}
-
-.btn {
-  position: absolute;
-  bottom: -80px;
-  background: rgb(183, 13, 47);
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-#prev {
-  left: 20%;
-}
-
-#next {
-  right: 20%;
-}
-
-.btn:hover {
-  filter: brightness(1.5);
-}
-
-        .text-btn-container
-        {
-          position: absolute;
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-          text-align: center;
-          margin-left: 46vh;
-          color: #ffffffd8;
-        }
-
 
 .logocont {
   text-align: center;
@@ -1484,4 +1408,64 @@ ul{
 .footer-col h4 {
   font-size: 35px;
 }
+
+/*______________*/
+      #room {
+        background: linear-gradient(white,rgb(196, 195, 195),rgb(196,195,195),rgb(196,195,195),rgb(196,195,195),rgb(196,195,195),white);
+        height: 130vh;
+        max-width: 576vh;
+      }
+
+#room h1 {
+font-size: 30px;
+top: 30vh;
+margin-left: 0;
+margin-right: 100px;
+text-align: center;
+display: none;
+}
+.clip {
+  top: 10vh;
+  position: absolute;
+  display: block;
+  left: auto;
+  margin-right: 10vh;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+}
+
+.clip1 {
+  background: url(./img-room/standard-double-room1.png);
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0 0, 46% 0, 39% 100%, 0 100%);
+}
+
+.clip2 {
+  background: url(./img-room/superior-twin-room2.png);
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(19% 0, 87% 0, 64% 100%, 33% 100%);
+}
+
+.clip3 {
+  background: url(./img-room/delux-tripel-room2.png);
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(82% 0, 100% 0, 100% 100%, 63% 100%);
+}
+
+.container:hover .clip {
+  clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+
+.container .clip:hover {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.clip:hover{
+  transform: scale(1.2);
+}
+
 }

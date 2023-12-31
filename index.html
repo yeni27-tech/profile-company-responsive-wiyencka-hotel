@@ -170,87 +170,75 @@ viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
 
 
 <!--img rotate-->
-<a href="./html/reservation.html">
-<div class="all-img" id="rooms">
-
-<div class="image-container">
-      <span style="--i: 1">
-        <img
-          src="./img-room/standard-double-room3.png"
-        />
-      </span>
-      <span style="--i: 2">
-        <img
-          src="./img-room/standard-double-room1.png"
-        />
-      </span>
-      <span style="--i: 3">
-        <img
-          src="./img-room/standard-double-room2.png"
-        />
-      </span>
-      <span style="--i: 4">
-        <img
-          src="./img-room/delux-tripel-room1.png"
-        />
-      </span>
-      <span style="--i: 5">
-        <img
-          src="./img-room/superior-twin-room1.png"
-        />
-      </span>
-      <span style="--i: 6">
-        <img
-          src="./img-room/superior-twin-room3.png"
-        />
-      </span>
-      <span style="--i: 7">
-        <img
-          src="./img-room/delux-tripel-room2.png"
-        />
-      </span>
-      <span style="--i: 8">
-        <img
-          src="./img-room/superior-twin-room2.png"
-        />
-      </span>
+<div id="room">
+  <h1>Roooms</h1>
+<section class="container-img">
+      <a href="./html/booking-room1.html"><div class="clip clip1"></div></a>
+      <a href="./html/booking-room2.html"><div class="clip clip2"></div></a>
+      <a href="./html/booking-room3.html"><div class="clip clip3"></div></a>
+    </section>
     </div>
-
-    <div class="btn-container">
-      <button class="btn" id="prev"><</button>
-      <button class="btn" id="next">></button>
-      <div class="text-btn-container">
-        
-      </div>
-     
-    </div>
-    </div>
-    </a>
-
-
-
-    <script>
-const imageContainer = document.querySelector(".image-container");
-const prevBtn = document.getElementById("prev");
-const nextBtn = document.getElementById("next");
-
-let x = 0;
-
-prevBtn.addEventListener("click", () => {
-  x = x + 45;
-  rotate();
-});
-
-nextBtn.addEventListener("click", () => {
-  x = x - 45;
-  rotate();
-});
-
-function rotate() {
-  imageContainer.style.transform = `perspective(1000px) rotateY(${x}deg)`;
+    <style>
+      #room {
+        background: linear-gradient(white,rgb(196, 195, 195),rgb(196,195,195),rgb(196,195,195),rgb(196,195,195),rgb(196,195,195),white);
+        height: 120vh;
+        width: auto;
+      }
+  .container-img{
+  position: relative;
+  width:600px;
+  height:400px;
+  top: 30vh;
 }
-    </script>
 
+#room h1 {
+  position: absolute;
+font-size: 50px;
+margin-left: 140vh;
+margin-top: 60vh;
+
+}
+.clip {
+  position: absolute;
+  left: 150px;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+}
+
+.clip1 {
+  background: url(./img-room/standard-double-room1.png);
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0 0, 46% 0, 39% 100%, 0 100%);
+}
+
+.clip2 {
+  background: url(./img-room/superior-twin-room2.png);
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(19% 0, 87% 0, 64% 100%, 33% 100%);
+}
+
+.clip3 {
+  background: url(./img-room/delux-tripel-room2.png);
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(82% 0, 100% 0, 100% 100%, 63% 100%);
+}
+
+.container:hover .clip {
+  clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+
+.container .clip:hover {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.clip:hover{
+  transform: scale(1.2);
+}
+    </style>
 
 
  <!-- SERVICES -->
