@@ -595,7 +595,7 @@ body {
   z-index: 10;
   position: absolute;
   margin: 0;
-    margin-top: 395vh;
+    margin-top: 450vh;
     width: 100%;
     height: max-content;
     font-size: 16px;
@@ -1248,12 +1248,13 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 100vh;
+  height: 150vh;
   background: linear-gradient(white,rgb(196, 195, 195),rgb(196,195,195),rgb(196,195,195),rgb(196,195,195),rgb(196,195,195),white);
   overflow: hidden;
 }
 
 .image-container {
+  margin-top: 20px;
   position: relative;
   width: 200px;
   height: 200px;
@@ -1449,7 +1450,7 @@ ul{
   z-index: 10;
   position: absolute;
   margin: 0;
-    margin-top: 373vh;
+    margin-top: 430vh;
     width: 100%;
     height: max-content;
     font-size: 16px;
