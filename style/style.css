@@ -31,6 +31,12 @@ body {
   z-index: 100;
 }
 
+@media screen and (max-width: 576px){
+  .navbar {
+    height: 30vh;
+  }
+}
+
 .navbar > a > img {
   height: auto;
   width: 35vh;
@@ -39,6 +45,24 @@ body {
   display: block;
   margin-left: auto;
   margin-right: 80vh;
+}
+
+@media screen and (max-width: 576px) {
+  .navbar >a>img {
+    width: 50vh;
+    margin-right: 47vh;
+  }
+  #main span {width: max-content;}
+  .sidenav a {
+    scale: 2;
+    padding: 100;
+    margin-left: 100vh;
+  }
+  #mySidenavs {
+    transform: ;
+    width: 900vh;
+    margin-left: 100vh;
+  }
 }
 
 .navbar{
@@ -87,7 +111,7 @@ body {
   padding: 16px;
 }
 
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 567px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
@@ -563,10 +587,12 @@ body {
 
 .testim .arrow.left {
     left: 10px;
+    display: none;
 }
 
 .testim .arrow.right {
     right: 10px;
+    display: none;
 }
 
 .testim .dots {
@@ -1093,11 +1119,10 @@ body {
 	.testim .arrow {
 		font-size: 1.5em;
 	}
-	
-	.testim .cont div p {
-		line-height: 25px;
-	}
+}
 
+.wrap #rinht-arrow {
+  display: none;
 }
 /*--------------------*/
 
@@ -1137,36 +1162,7 @@ body {
   height: 80vh;
 }
 
-.alm > .line1 > p:nth-child(2) {
-  padding-bottom: 70px;
-  
-}
 
-.logocont {
-  padding: auto;
-}
-
-.logocont p:nth-child(1){
-  font-size: 33px;
-   font-family: 'Kaushan Script', cursive;
-  font-family: 'Pinyon Script', cursive;
-  color: rgba(75, 0, 0, 0.811);
-  font-weight: bold;
-}
-
-.logocont p:nth-child(2){
-  font-size: 15px;
-   text-transform: uppercase;
-  color: goldenrod;
-}
-
-.logocont hr {
-  width: 100px;
-}
-.logocont p:nth-child(3) {
-  font-size: 12px;
-  width: 200px;
-}
 
  .all-img {
   margin: 0;

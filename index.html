@@ -293,7 +293,6 @@ function rotate() {
 <section id="testim" class="testim">
 <!--         <div class="testim-cover"> -->
             <div class="wrap">
-
                 <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
                 <span id="left-arrow" class="arrow left fa fa-chevron-left "></span>
                 <ul id="testim-dots" class="dots">
@@ -457,84 +456,145 @@ window.onload = function() {
 <div class="kosong"></div>
 
   <!--footer--> 
-<center>
-  <section id="footer" class="contact">
-
-    <div class="logocont">
-      <p>WiyenckA\</p>
-      <hr>
-      <p>H&emsp;O&emsp;T&emsp;E&emsp;L</p>
-      <hr>
-      <p>Pangkuan Kemewahan, kami<br> 
-        mengundang anda untuk mencobanya</p>
+ <footer class="footer">
+  	 <div class="container-footer">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+          <div class="logocont">
+      <img src="./images/logo.png" width="200px">
+      <h5>Pangkuan Kemewahan, kami<br> 
+        mengundang anda untuk mencobanya</h5>
     </div>
-<!--klo ga sesuai kmu edit aja-->
-    <i class="alm">
-      <div class="flex-alamat">
-        <div class="alamat">
-          <h2>
-          find Us<br>
-          Alamat
-        </h2>
-          Jln. Bahagia, kota Cirebon,<br>
-          Jawa Barat, Indonesia</div>
-      </div>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>company</h4>
+  	 			<ul>
+  	 				<li><a href="#">About</a></li>
+  	 				<li><a href="#">Room</a></li>
+  	 				<li><a href="#">Fasilitas</a></li>
+  	 				<li><a href="#">Review</a></li>
+            <li><a href="./html/contact.html">Contact</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>alamat</h4>
+  	 			<ul>
+  	 				Jln. Bahagia, kota Cirebon, 
+            Jawa Barat, Indonesia
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>follow us</h4>
+  	 			<div class="social-links">
+  	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="#"><i class="fab fa-twitter"></i></a>
+  	 				<a href="#"><i class="fab fa-instagram"></i></a>
+  	 				<a href="#"><i class="fa-brands fa-line"></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </div>
+  </footer>
 
-      <i class="contact-us">
-        <h2>
-          Contact Us<br>
-        </h2>
-        <div class="fa-sharp fa-solid fa-envelope"></i> &emsp;@wiyencaindonesia@gmail.com<br>
-        <i class="fa-sharp fa-solid fa-phone"></i>&emsp;
-         +62123456789
-      </div>
-      </div>
-      
-      <div class="sosmed">
-        <h2>
-        Follow Us<br>
-        Sosmed
-        </h2>
-        </div>
-        <div class="flex-sosmed">
-        <i class="fa-sharp fa-solid fa-phone"></i>
-        <i class="fa-brands fa-tiktok"></i>
-        <i class="fa-brands fa-facebook-f"></i>
-        <i class="fa-brands fa-line"></i>
-      </div>
-    </div>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+.logocont {
+  text-align: center;
+  margin-left: 0px;
+}
+.logocont h5 {
+  color: #575555;
+}
+.container-footer{
+	max-width: 1170px;
+	margin:auto;
+  line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #fff;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #575555;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 17px;
+	text-transform: capitalize;
+  color: #434343;;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: rgb(165, 19, 49);
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(31, 31, 31, 0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #ffffff;
+	background-color: rgb(165, 19, 49);
+}
 
-    <style>
-      .flex-alamat {
-        display: flex;
-        align-items: center;
-      }
-      .alamat {
-        flex-direction: none;
-      }
-      .contact-us {
-        position: absolute;
-        margin-left: 50vh;
-      }
-      .flex-sosmed  {
-        display: flex;
-        align-items: center;
-      }
-      .flex-sosmed i {
-        margin: 10px;
-      }
-      .flex-sosmed h2 {
-        flex-direction: none;
-      }
-      .alm {
-        font-size: 20px;
-        margin-left: 50vh;
-      }
-    </style>
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
 
-  </section>
-</center>
 
+
+
+  </style>
 
 
 <!--JAVA SCRIPT-->
