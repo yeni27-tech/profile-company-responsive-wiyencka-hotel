@@ -1,6 +1,6 @@
 * {
-  padding: 0;
-  margin: 0;
+ padding:0;
+ margin:0;
 }
 
 html {
@@ -11,7 +11,6 @@ body {
   font-family: "Lato", sans-serif;
   scroll-behavior: smooth;
   height: 300vh;
-  background: #ffffff;
 }
 
 /*loading teks*/
@@ -33,24 +32,31 @@ body {
 
 @media screen and (max-width: 576px){
   .navbar {
-    height: 30vh;
+    height: 10vh;
   }
+}
+
+.navbar > a {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .navbar > a > img {
   height: auto;
-  width: 35vh;
+  width: 200px;
   padding-top: 5px;
   cursor: pointer;
   display: block;
+  margin-right: auto;
   margin-left: auto;
-  margin-right: 80vh;
 }
 
 @media screen and (max-width: 576px) {
   .navbar >a>img {
-    width: 50vh;
-    margin-right: 47vh;
+    width: 20vh;
+    
   }
   #main span {width: max-content;}
   .sidenav a {
@@ -59,7 +65,6 @@ body {
     margin-left: 100vh;
   }
   #mySidenavs {
-    transform: ;
     width: 900vh;
     margin-left: 100vh;
   }
@@ -70,7 +75,8 @@ body {
     align-items: center;
     justify-content: space-between;
   }
-    .sidenav {
+
+  .sidenav {
   height: 100%;
   width: 0;
   position: fixed;
@@ -121,7 +127,7 @@ body {
 .carousel{
    position: relative;
    z-index: 3;
-
+   width: 100%;
 }
 
 .carousel_inner{
@@ -209,7 +215,7 @@ body {
 .fullscreen > .full {
    position: absolute;
    width: 100%;
-
+   height: auto;
 }
 
 /* carousel */
@@ -218,9 +224,10 @@ body {
    width: 100%;
 }
 
-@media (max-width: 200vh) {
+@media (max-width: 576vh) {
   .carousel  {
-    height: 30%;
+    height: 20%;
+    
   }
 
   .carousel_caption {
@@ -383,6 +390,7 @@ body {
    display: flex;
    background-color:  rgb(255, 255, 255) ;
    text-transform: capitalize;
+   text-align: center;
 }
 
 .wrap-all-child-rest {
@@ -437,6 +445,70 @@ body {
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
     margin-bottom: 2px;
 }
+
+@media screen and (max-width: 576px) {
+  .wrap-all-child-rest> .check-out, .n-of-guest, .btn-rest {
+    padding: 2vh;
+    margin-left: 0;
+  }
+
+  .btn-rest {
+    font-size: 12px;
+    padding: 1.3vh;
+  }
+
+  .check-out {
+    font-size: 12px;
+
+  }
+
+  .check-in {
+    font-size: 12px;
+  }
+
+  .n-of-guest {
+    font-size: 12px;
+  }
+
+  .wrap-all-child-rest #c-i, #c-o, #opt {
+    width: 3vh;
+  }
+}
+
+@media screen and (max-width: 666px) {
+  .wrap-all-child-rest> .check-out, .n-of-guest, .btn-rest {
+    padding: 2vh;
+    margin-left: 0;
+    padding-left: 0;
+
+  }
+
+  .btn-rest {
+    font-size: 12px;
+    padding: 1.3vh;
+    margin-left: 10px;
+  }
+
+  .check-out {
+    font-size: 12px;
+
+  }
+
+  .check-in {
+    font-size: 12px;
+    padding-left: 0;
+  }
+
+  .n-of-guest {
+    font-size: 12px;
+  }
+
+  .wrap-all-child-rest #c-i, #c-o, #opt {
+    width: 3vh;
+  }
+}
+
+
 /*selesai*/
 
 
@@ -1132,12 +1204,17 @@ body {
 .about {
   background: white;
   height: 50vh;
+  padding: 20px;
+  text-align: justify;
+  width: 100%;
 }
 
 .isiabt {
-  text-align: center;
-  padding-top: 15vh;
-  width: 150vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10vh;
+  width: 80%;
   color: rgb(91, 91, 91);
 }
 
@@ -1145,7 +1222,16 @@ body {
   font-size: 25px;
   padding-bottom: 20px;
   color: black;
+  text-align: center;
 }
+
+@media screen and (width: 576px) {
+  .about {
+    width: 500px;
+    padding-bottom: 35px;
+  }
+}
+
 
 .contact {
   background: rgb(255, 255, 255);
