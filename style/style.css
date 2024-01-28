@@ -325,6 +325,7 @@ body {
 /* Animation */
 .parallax > use {
   animation: move-forever 25s cubic-bezier(.55,.5,.45,.5) infinite;
+  -webkit-animation: move-forever 25s cubic-bezier(.55,.5,.45,.5) infinite;
 }
 
 .parallax > use:nth-child(1) {
@@ -1390,9 +1391,9 @@ ul{
 }
 
 .fullscreen > .full {
-   position: absolute;
-   width: max-content;
-   height: max-content;
+  position: absolute;
+  width: max-content;
+  height: max-content;
 }
 
 .container-footer{
